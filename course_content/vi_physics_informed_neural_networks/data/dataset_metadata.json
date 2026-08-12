@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "evidence_class": "synthetic",
+  "generator": "scripts/generate_heat_equation_datasets.py",
+  "random_seed": 54403,
+  "governing_equation": "dT/dt = alpha*d2T/dx2",
+  "temperature_definition": "excess temperature above fixed boundary temperature",
+  "parameters": {
+    "length_m": 0.1,
+    "initial_amplitude_K": 50.0,
+    "alpha_m2_s": 1e-05,
+    "final_time_s": 200.0
+  },
+  "boundary_conditions": "T(0,t)=T(L,t)=0 K excess temperature",
+  "initial_condition": "T(x,0)=T0*sin(pi*x/L)",
+  "observation_design": {
+    "sensor_x_over_L": [
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "times_s": [
+      10.0,
+      20.0,
+      30.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0,
+      200.0
+    ],
+    "noise_model": "independent zero-mean Gaussian, fixed seeded realization"
+  },
+  "files": {
+    "reference_temperature_field.csv": {
+      "sha256": "522358396e586e4f584d6b62536b3ea20209ed6862b523ff86cffec89f083ac1",
+      "rows": 5151
+    },
+    "inverse_temperature_clean.csv": {
+      "sha256": "2cb057997f65a1572b7da77a4c3c0fa6ed1c39cf45936c6df0bf104c387bc955",
+      "rows": 80
+    },
+    "inverse_temperature_noise_0p50K.csv": {
+      "sha256": "6913b9fc385e455407d3aae3f8f2294259f476949d64a0f0d2e97b22350030b6",
+      "rows": 80
+    },
+    "inverse_temperature_noise_1p00K.csv": {
+      "sha256": "085878e13b082a76518a70399d34b9ccb00363a27625238d916f9dede665fbf7",
+      "rows": 80
+    }
+  },
+  "limitations": [
+    "No experimental measurements are included.",
+    "Synthetic observations use the same model assumed by the PINN.",
+    "The noise model omits bias, drift, temporal correlation, and boundary uncertainty."
+  ]
+}
