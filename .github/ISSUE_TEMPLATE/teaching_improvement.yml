@@ -1,0 +1,31 @@
+name: Teaching-material improvement
+description: Suggest a correction, accessibility improvement, engineering example, or instructor adaptation.
+title: "[Teaching]: "
+labels: ["teaching"]
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module or shared resource
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Learning need or problem
+      description: "Describe the observed student/instructor need without identifying students."
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement and evidence
+    validations:
+      required: true
+  - type: checkboxes
+    id: rights
+    attributes:
+      label: Rights and sensitivity
+      options:
+        - label: "I have not included student records, confidential data, or restricted material."
+          required: true

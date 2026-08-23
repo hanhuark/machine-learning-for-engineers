@@ -1,5 +1,5 @@
 ## Topic 2 - Image Classification
-Classification has several applications for example automatic sorting. For this assignment, you will create a classification model to sort between nuts and bolts. 
+Classification has several applications, including automatic sorting. This module uses nuts and bolts to teach image classification as an engineering deployment problem: students must consider data splits, robustness, confidence, and failure consequences, not only training accuracy. The legacy Homework 2 PDF/DOCX remains available; use the [current AI-resilient assignment specification](ASSIGNMENT_AI_RESILIENT.md) for future offerings.
 
 **Tutorial**:<br>[![colab1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11Tnvekzz4KN7ytTOJCA9HHvrKh7kVJ03?usp=sharing)
 <br> 

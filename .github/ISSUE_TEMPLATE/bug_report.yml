@@ -1,0 +1,27 @@
+name: Bug report
+description: Report a reproducibility, code, link, or data-access problem.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module and file
+      description: "Example: course_content/ii_classification/README.md"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction command or steps
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: "OS, Python/framework version, hardware, and relevant error output. Do not include credentials."

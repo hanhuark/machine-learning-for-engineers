@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this curriculum or adapt its materials, please cite it using the metadata below."
+title: "MEEG-44403/54403: Machine Learning for Mechanical Engineers"
+type: software
+authors:
+  - family-names: Hu
+    given-names: Han
+repository-code: "https://github.com/hanhuark/MEEG-54403"
+license: BSD-3-Clause
+keywords:
+  - machine learning
+  - mechanical engineering
+  - engineering education
+  - thermal fluids
+  - physics-informed neural networks
