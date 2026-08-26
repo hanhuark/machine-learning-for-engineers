@@ -29,12 +29,13 @@ The course uses Python tutorials as the primary reproducible pathway. MATLAB tut
 | [III. Dimensionality reduction and clustering](course_content/iii_dimensionality_reduction_and_clustering/) | Extract structure from boiling images; PCA/SVD and clustering | Reconstruction, stability, physical interpretation |
 | [IV. Segmentation and object detection](course_content/iv_segmentation_and_object_detection/) | Identify bubbles and objects; U-Net, YOLO, transfer learning | Held-out condition performance, visual error audit |
 | [V. Reinforcement learning](course_content/v_reinforcement_learning/) | Make bounded sequential decisions; Q-learning and policy evaluation | Baseline policy, constraint audit, perturbed-condition evaluation |
-| [VI. Generative models](course_content/vi_generative_models/) | Evaluate when synthetic or reconstructed engineering data are credible | **Under development**; not yet a current assignment |
-| [VII. Time-series forecasting](course_content/vii_time_series_forecasting/) | Forecast boiling dynamics; sequence-to-sequence RNN/GRU/LSTM candidates | **Validation refresh required** before graded use |
+| [VI. Generative models and inverse engineering design](course_content/vi_generative_models/) | Evaluate synthetic/reconstructed data and design candidates under physical constraints | **Under development**; not yet a current assignment |
+| [VII. Time-series forecasting and prognostics](course_content/vii_time_series_forecasting/) | Forecast boiling dynamics; sequence-to-sequence RNN/GRU/LSTM candidates | **Validation refresh required** before graded use |
 | [VIII. Physics-informed neural networks](course_content/viii_physics_informed_neural_networks/) | Solve and invert transient heat conduction; PINNs | Analytical/numerical verification, inverse estimate, failure audit |
 | [IX. AI agent harnesses](course_content/ix_ai_agent_harnesses/) | Constrain and verify AI-assisted engineering workflows; skills, MCP, and plugins | Harness specification, independent verification, failure audit, individual defense |
 
 See [COURSE_MAP.md](COURSE_MAP.md) for prerequisites, suggested sequencing, and instructor-facing assessment checkpoints.
+See [CURRICULUM_ARCHITECTURE.md](CURRICULUM_ARCHITECTURE.md) for the module-readiness review, decisions on module boundaries, and the planned industrial-AI roadmap.
 
 ## Start here
 
@@ -54,7 +55,7 @@ Use:
 - [assessment policy](teaching_resources/ASSESSMENT_AND_AI_POLICY.md) for course-level expectations;
 - [AI-use record template](teaching_resources/AI_USE_TEMPLATE.md) for AI-assisted work;
 - [shared rubric](teaching_resources/ENGINEERING_ML_RUBRIC.md) for grading;
-- [current Homework 1 specification](course_content/i_regression/ASSIGNMENT_AI_RESILIENT.md) and [current Homework 2 specification](course_content/ii_classification/ASSIGNMENT_AI_RESILIENT.md).
+- [current Homework 1 specification](course_content/i_regression/ASSIGNMENT_AI_RESILIENT.md), [current Homework 2 specification](course_content/ii_classification/ASSIGNMENT_AI_RESILIENT.md), [current structure-discovery specification](course_content/iii_dimensionality_reduction_and_clustering/ASSIGNMENT_AI_RESILIENT.md), and [current visual-measurement specification](course_content/iv_segmentation_and_object_detection/ASSIGNMENT_AI_RESILIENT.md).
 
 Legacy PDF/DOCX assignments remain available for historical context. Instructors should identify the current assessment version and keep answer keys, rubrics, and instructor-held test data outside the public repository.
 

@@ -1,5 +1,5 @@
 ## Topic 4 - Segmentation and Object Detection:
-Within engineering the use of segmentation and object detection have many applications. For example, segmentation can be used to obtain the approximate vapor fraction from boiling images. This assignment will have you using a couple popular semantic segmentation and object detection models.
+Within engineering the use of segmentation and object detection have many applications. For example, segmentation can be used to obtain the approximate vapor fraction from boiling images. The legacy Homework 4 PDF/DOCX remains available; use the [current AI-resilient assignment specification](ASSIGNMENT_AI_RESILIENT.md) for future offerings. The public tutorial/data links require instructor verification before graded use.
 For semantic segmentation, you will use boiling images and corresponding masks made using labelme and a popular model UNET (which is provided here so you can just copy and put directly into your code): 
 
 ![od](./static/segvid.gif)
@@ -80,9 +80,9 @@ Since this homework will use semantic segmentation, we will focus on it. This mo
 
 The first thing we will need to do is get our dataset. One possibilty is to find a relevant dataset online that already has the masks someone else generated. This may not always be an option so you may have to prepare your own dataset. To do this you will need to outline the images. Labelme is a great software for generating labeled masks. With this you can trace the objects and assign labels to them. 
 
-Now that we have our dataset we will define our architecture. This model will take in an image input and output class probablities for each pixel of that input image. SIMPLE EXAMPLE MODEL
+Now that we have our dataset we will define our architecture. This model will take in an image input and output class probabilities for each pixel of that input image. The U-Net implementation shown above is one possible architecture; it is not a substitute for a valid split, suitable labels, or a held-out measurement check.
 
-This simple model probably wont work well so you will probably need a more advance architecture. One popular architecture for semantic segmentation is UNET. It was developed by Olaf Ronneberger, Philipp Fischer, and Thomas Brox at the University of Freiburg, Germany for biomedical image segmentation, where the goal is to identify and separate different structures (e.g., cells, tissues, organs) in microscopic or medical images. This is the model we will use for the homework. I really want to emphasize how segmenatation is just more complex classification. 
+A naive model may not work well, so the architecture and validation plan both require justification. One popular architecture for semantic segmentation is UNET. It was developed by Olaf Ronneberger, Philipp Fischer, and Thomas Brox at the University of Freiburg, Germany for biomedical image segmentation, where the goal is to identify and separate different structures (e.g., cells, tissues, organs) in microscopic or medical images. This is the model used in the legacy homework. Segmentation extends classification to a spatial output, but its labels and errors require separate evaluation.
 
 From this model, you will see a lot of similarities to the more simple classification model we did previously. For example, the activation function on the last layer and the loss function. 
 

@@ -1,5 +1,5 @@
 ## Topic 2 - Image Classification
-Classification has several applications, including automatic sorting. This module uses nuts and bolts to teach image classification as an engineering deployment problem: students must consider data splits, robustness, confidence, and failure consequences, not only training accuracy. The legacy Homework 2 PDF/DOCX remains available; use the [current AI-resilient assignment specification](ASSIGNMENT_AI_RESILIENT.md) for future offerings.
+Classification has several applications, including automatic sorting. This module uses nuts and bolts to teach image classification as an engineering deployment problem: students must consider data splits, robustness, confidence, and failure consequences, not only training accuracy. The legacy Homework 2 PDF/DOCX and tutorials remain available; use the [current AI-resilient assignment specification](ASSIGNMENT_AI_RESILIENT.md) for future offerings, and verify external data/tutorial access before assigning them.
 
 **Tutorial**:<br>[![colab1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11Tnvekzz4KN7ytTOJCA9HHvrKh7kVJ03?usp=sharing)
 <br> 
@@ -46,7 +46,7 @@ For one-hot encoding: let's say pointed is column 1 and floppy is column 2; cat 
 One-hot encodings are good because they don't imply an order and are espicially usefule for when an input belongs to multiple classes. However, they will take up more memory than the label encodings. <br><br>
 
 For our case we will use the label encodings since this is just a simple binary classification case (we only have two possible output classes).
-So what we will do is set up a neural network. This network will differ from the regression model because of the last layer. For binary classification, we will use one single output neuron with a sigmoid activation function which is defined below and looks like figure 
+So what we will do is set up a neural network. This network will differ from the regression model because of the last layer. For binary classification, we will use one single output neuron with a sigmoid activation function defined below.
 
 $$ \sigma (x)= \frac{1}{1+e^{-x}}$$
 

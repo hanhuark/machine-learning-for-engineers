@@ -1,6 +1,6 @@
 ### Topic 1 - Regression:
 
-Regression is a fundamental machine learning task. This module uses Razorback football win margin to introduce model comparison, data availability, residual analysis, and the distinction between pregame forecasting and postgame explanation. The legacy Homework 1 PDF/DOCX remains available; use the [current AI-resilient assignment specification](ASSIGNMENT_AI_RESILIENT.md) for future offerings. <br><br>
+Regression is a fundamental machine learning task. This module uses Razorback football win margin to introduce model comparison, data availability, residual analysis, and the distinction between pregame forecasting and postgame explanation. The legacy Homework 1 PDF/DOCX and tutorials remain available; use the [current AI-resilient assignment specification](ASSIGNMENT_AI_RESILIENT.md) for future offerings, and verify external data/tutorial access before assigning them. <br><br>
 
 **Tutorial**:<br> [![colab1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/100jLm4_UesIVNyjq-mCEIVxE28kXYqX6?usp=sharing) 
 <br> 
@@ -61,7 +61,7 @@ import numpy as np
 X_train=np.array([0,2,3]).reshape(-1,1)
 Y_train=np.array([0,4,6])
 X_test=np.array([1,4]).reshape(-1,1)
-Y_test=np.array([1,8])
+Y_test=np.array([2,8])
 
 # Train Model
 model=LinearRegression()
@@ -135,7 +135,7 @@ For this simple example, we will just specify the amount of epochs to complete. 
 |2|1.765|0.569|0.11735|
 |3|1.779|0.5335|0.1032|
 
-Figure NUMBER shows the training curve for the 10 epochs. The loss is decreasing over the training epochs which is what we want to see.<br><br>
+The training curve for the 10 epochs should decrease on the training data, but that trend alone is not evidence of useful prediction on unseen data.<br><br>
 We now will test our model with the withheld set. This will show if we trust our model to make predictions on data not used within the training. <br><br>
 With our new W=1.859 and b=0.341 we will make predictions:
 
@@ -157,7 +157,7 @@ import numpy as np
 X_train=np.array([0,2,3]).reshape(-1,1)
 Y_train=np.array([0,4,6])
 X_test=np.array([1,4]).reshape(-1,1)
-Y_test=np.array([1,8])
+Y_test=np.array([2,8])
 
 # Define our simple model
 model=tf.keras.Sequential([
@@ -209,7 +209,7 @@ The optimizer is how we update the learnable parameters. The most basic of these
 
 #### OVERFITTING
 
-There are several things you have to look out for when training models. One important issue you need to avoid is overfitting. This can make it look like your training is going well but when checking on your testing data it has horrible performance. Overfitting is especially a danger with noisy data, you want to make sure your model describes trends rather than specific noise. For example, figure NUMBER shows two functions that describe the same set of data. The blue are the values the model was trained on and the star shows a testing data point. You can see the right function yeilds a closer prediction to the testing data. <br><br>
+There are several things you have to look out for when training models. One important issue you need to avoid is overfitting. This can make it look like your training is going well but when checking on your testing data it has horrible performance. Overfitting is especially a danger with noisy data; the goal is to describe trends rather than specific noise. Compare training and held-out error instead of using a training curve as proof of generalization. <br><br>
 
 <img src="./static/overfit.png" alt="Overfitting" style="width:70%;">
 

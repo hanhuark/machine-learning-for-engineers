@@ -67,7 +67,7 @@ Start with read-only access. Allow writes only inside a disposable course fixtur
 
 ## Recommended placement
 
-Use this as a one- to two-week advanced module after students have completed at least one programming-based ML assignment. It can also be introduced earlier as a short orientation, then revisited before the final project. It is not a prerequisite for the other ML modules.
+Introduce the access, privacy, AI-use, and verification boundary during the first week. Use the full one- to two-week design-and-defense assignment after students have completed at least one programming-based ML assignment, ideally alongside the final project. It is a cross-cutting thread, not a prerequisite for the other ML modules.
 
 ## Assessment principle
 

@@ -1,4 +1,4 @@
-# VII. Time-Series Forecasting of Boiling Dynamics
+# VII. Time-Series Forecasting and Prognostics of Boiling Dynamics
 
 > **Status: validation refresh in progress.** The legacy PCA–LSTM/sequence-to-sequence materials are preserved below, but the tutorial must be refreshed before use as a current graded assignment.
 
@@ -10,7 +10,7 @@ The supplied legacy data record contains vapor fraction (dimensionless) as a fun
 
 ## Why this is a separate module
 
-Forecasting is not merely another neural-network architecture. It introduces time ordering, forecast horizon, autocorrelation, regime change, and leakage risks that are different from the image and tabular modules.
+Forecasting and prognostics are not merely another neural-network architecture. They introduce time ordering, forecast horizon, autocorrelation, regime change, drift, alarm consequences, and leakage risks that are different from the image and tabular modules. The current materials address forecasting only; maintenance/prognostics content is a planned extension.
 
 ## Current materials
 
