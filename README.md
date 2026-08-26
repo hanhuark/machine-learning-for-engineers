@@ -1,8 +1,12 @@
-# MEEG-44403/54403: Machine Learning for Mechanical Engineers
+# Machine Learning for Engineers
 
-An open, engineering-first curriculum for learning to formulate, build, verify, and critique machine-learning workflows using mechanical-engineering data and systems. It is intended for upper-level undergraduate and graduate students, instructors adapting individual modules, and engineers building stronger data-driven analysis habits.
+> Formerly **MEEG-44403/54403: Machine Learning for Mechanical Engineers** at the University of Arkansas.
 
-The course uses Python tutorials as the primary reproducible pathway. MATLAB tutorials remain available where supplied, including a direct [MATLAB Online launch](https://matlab.mathworks.com/open/github/v1?repo=hanhuark/MEEG-54403), but new course development should not assume students have access to proprietary software.
+An open, project-based curriculum for learning to formulate, build, verify, and critique machine-learning workflows for physical engineering systems. It is intended for upper-level undergraduate and graduate students, instructors adapting individual modules, and engineers building stronger data-driven analysis habits.
+
+**Start with the [course gateway](docs/index.md),** choose a module from the map below, and use the [adoption guide](ADOPTION_GUIDE.md) to adapt it responsibly.
+
+The course uses Python tutorials as the primary reproducible pathway. MATLAB tutorials remain available where supplied, including a direct [MATLAB Online launch](https://matlab.mathworks.com/open/github/v1?repo=hanhuark/machine-learning-for-engineers), but new course development should not assume students have access to proprietary software.
 
 ## What students learn
 
