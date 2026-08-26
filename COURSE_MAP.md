@@ -13,8 +13,9 @@ The modules are ordered to build from supervised learning and data hygiene to hi
 | 8-10 | IV. Segmentation/object detection | II | Label quality, transfer learning, visual validation | Inspect and explain failed predictions |
 | 11-12 | Advanced-track selection: V. Reinforcement learning, VI. Generative models, or VII. Time-series forecasting | Foundations plus relevant prior module | Sequential decisions, synthetic data, or dynamic forecasting | Present hypothesis, baseline, and limitation |
 | 13-14 | VIII. PINNs | Calculus, differential equations, neural networks | Governing equations, inverse problems, model-form error | Modify a boundary condition and predict its effect |
+| 13-14 or a standalone lab | IX. AI agent harnesses | One prior programming-based engineering assignment | Tool boundaries, skills, MCP, plugins, verification | Defend a constrained workflow and reject an unsupported agent output |
 
-The advanced-track modules are alternatives in a typical one-semester offering. Module VI is under development, and Module VII requires a validation refresh before it is used as graded material.
+The advanced-track modules are alternatives in a typical one-semester offering. Module IX can also be used as a one- to two-week lab alongside a later project. Module VI is under development, and Module VII requires a validation refresh before it is used as graded material.
 
 ## Minimum competency standard
 

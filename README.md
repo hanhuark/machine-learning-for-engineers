@@ -17,6 +17,7 @@ The course uses Python tutorials as the primary reproducible pathway. MATLAB tut
 - identify leakage, domain shift, model-form error, and failure cases;
 - connect model outputs to physical quantities, limits, and engineering decisions;
 - use generative-AI tools responsibly while independently verifying their outputs;
+- design and audit bounded AI-agent harnesses for engineering workflows;
 - communicate reproducible, evidence-bounded technical conclusions.
 
 ## Course map
@@ -31,6 +32,7 @@ The course uses Python tutorials as the primary reproducible pathway. MATLAB tut
 | [VI. Generative models](course_content/vi_generative_models/) | Evaluate when synthetic or reconstructed engineering data are credible | **Under development**; not yet a current assignment |
 | [VII. Time-series forecasting](course_content/vii_time_series_forecasting/) | Forecast boiling dynamics; sequence-to-sequence RNN/GRU/LSTM candidates | **Validation refresh required** before graded use |
 | [VIII. Physics-informed neural networks](course_content/viii_physics_informed_neural_networks/) | Solve and invert transient heat conduction; PINNs | Analytical/numerical verification, inverse estimate, failure audit |
+| [IX. AI agent harnesses](course_content/ix_ai_agent_harnesses/) | Constrain and verify AI-assisted engineering workflows; skills, MCP, and plugins | Harness specification, independent verification, failure audit, individual defense |
 
 See [COURSE_MAP.md](COURSE_MAP.md) for prerequisites, suggested sequencing, and instructor-facing assessment checkpoints.
 

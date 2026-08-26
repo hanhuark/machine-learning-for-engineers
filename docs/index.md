@@ -30,7 +30,7 @@ Confirmed course implementations and adaptations are listed in [IMPLEMENTATIONS.
 - **AI is a tool, not evidence of learning.** Students may use generative AI only under documented conditions and must verify, explain, and modify their work independently.
 - **Reusable by design.** Python is the primary reproducible pathway; modules may be adopted independently with clear provenance and licensing expectations.
 
-## Explore the six modules
+## Explore the modules
 
 1. [Regression](../course_content/i_regression/): continuous engineering outcomes, baselines, residuals, and split design.
 2. [Classification](../course_content/ii_classification/): image classification, grouped splits, and deployment constraints.
@@ -40,6 +40,7 @@ Confirmed course implementations and adaptations are listed in [IMPLEMENTATIONS.
 6. [Generative models](../course_content/vi_generative_models/): engineering synthetic data and credibility checks (**under development**).
 7. [Time-series forecasting](../course_content/vii_time_series_forecasting/): boiling dynamics and sequence-to-sequence forecasting (**validation refresh required**).
 8. [Physics-informed neural networks](../course_content/viii_physics_informed_neural_networks/): transient heat conduction, inverse problems, and model-form error.
+9. [AI agent harnesses](../course_content/ix_ai_agent_harnesses/): bounded AI-assisted engineering workflows, skills, MCP, plugins, and independent verification.
 
 ## Evidence and reuse
 
