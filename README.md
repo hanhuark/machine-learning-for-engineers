@@ -1,10 +1,12 @@
 # Machine Learning for Engineers
 
-> Formerly **MEEG-44403/54403: Machine Learning for Mechanical Engineers** at the University of Arkansas.
+> **Originating implementation:** [MEEG 54403: Machine Learning for Mechanical Engineers](https://mechanical-engineering.uark.edu/) at the University of Arkansas. The course is ongoing; this repository is designed for that course and for adaptation by other engineering programs.
 
 An open, project-based curriculum for learning to formulate, build, verify, and critique machine-learning workflows for physical engineering systems. It is intended for upper-level undergraduate and graduate students, instructors adapting individual modules, and engineers building stronger data-driven analysis habits.
 
 **Start with the [course gateway](docs/index.md),** choose a module from the map below, and use the [adoption guide](ADOPTION_GUIDE.md) to adapt it responsibly.
+
+See [IMPLEMENTATIONS.md](IMPLEMENTATIONS.md) for the originating course and a transparent record of confirmed implementations as the curriculum is adopted elsewhere.
 
 The course uses Python tutorials as the primary reproducible pathway. MATLAB tutorials remain available where supplied, including a direct [MATLAB Online launch](https://matlab.mathworks.com/open/github/v1?repo=hanhuark/machine-learning-for-engineers), but new course development should not assume students have access to proprietary software.
 

@@ -22,3 +22,5 @@ Start with regression and classification before vision or advanced topics. Pair 
 ## Report improvements
 
 Please open an issue or pull request for corrected links, clearer explanations, reproducibility repairs, accessibility improvements, new mechanics-focused examples, or instructor adaptation notes. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+If you publicly implement one or more modules, you may also request inclusion in the [implementations record](IMPLEMENTATIONS.md). Inclusion requires an instructor-approved, publicly shareable description; it is not an evaluation of educational impact.

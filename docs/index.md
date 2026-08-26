@@ -9,7 +9,7 @@ title: Machine Learning for Engineers
 
 An open curriculum for students and instructors who want to do more than run a model: define a physical question, build a defensible baseline, test on meaningful held-out conditions, inspect failure cases, and explain what the result means for an engineering decision.
 
-> Formerly MEEG-44403/54403: Machine Learning for Mechanical Engineers at the University of Arkansas.
+> **Originating implementation:** MEEG 54403: Machine Learning for Mechanical Engineers at the University of Arkansas. The course is ongoing, and this repository is designed for adaptation by other engineering programs.
 
 ## Choose your path
 
@@ -19,6 +19,8 @@ An open curriculum for students and instructors who want to do more than run a m
 | Instructor adopting one module | Use the [adoption guide](../ADOPTION_GUIDE.md) and the [instructor guide](../INSTRUCTOR_GUIDE.md). |
 | Instructor designing AI-resilient assessment | Start with the [assessment and AI policy](../teaching_resources/ASSESSMENT_AND_AI_POLICY.md) and shared [engineering-ML rubric](../teaching_resources/ENGINEERING_ML_RUBRIC.md). |
 | Contributor | Read the [contributing guide](../CONTRIBUTING.md), especially the data-rights and student-information boundaries. |
+
+Confirmed course implementations and adaptations are listed in [IMPLEMENTATIONS.md](../IMPLEMENTATIONS.md).
 
 ## What makes this different
 
