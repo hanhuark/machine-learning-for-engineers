@@ -2,6 +2,8 @@ cff-version: 1.2.0
 message: "If you use this curriculum or adapt its materials, please cite it using the metadata below."
 title: "Machine Learning for Engineers: Project-Based AI for Physical Systems"
 type: software
+version: 1.0.0
+date-released: 2026-08-26
 authors:
   - family-names: Hu
     given-names: Han
