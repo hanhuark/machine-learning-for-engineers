@@ -36,8 +36,10 @@ Confirmed course implementations and adaptations are listed in [IMPLEMENTATIONS.
 2. [Classification](../course_content/ii_classification/): image classification, grouped splits, and deployment constraints.
 3. [Dimensionality reduction and clustering](../course_content/iii_dimensionality_reduction_and_clustering/): structure discovery in boiling images.
 4. [Segmentation and object detection](../course_content/iv_segmentation_and_object_detection/): visual labels, transfer learning, and error audits.
-5. [Advanced topics](../course_content/v_reinforcement_learning/): sequential decisions, generative models, or sequence prediction.
-6. [Physics-informed neural networks](../course_content/vi_physics_informed_neural_networks/): transient heat conduction, inverse problems, and model-form error.
+5. [Reinforcement learning](../course_content/v_reinforcement_learning/): bounded sequential decisions and policy evaluation.
+6. [Generative models](../course_content/vi_generative_models/): engineering synthetic data and credibility checks (**under development**).
+7. [Time-series forecasting](../course_content/vii_time_series_forecasting/): boiling dynamics and sequence-to-sequence forecasting (**validation refresh required**).
+8. [Physics-informed neural networks](../course_content/viii_physics_informed_neural_networks/): transient heat conduction, inverse problems, and model-form error.
 
 ## Evidence and reuse
 

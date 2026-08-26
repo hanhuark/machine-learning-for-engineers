@@ -27,8 +27,10 @@ The course uses Python tutorials as the primary reproducible pathway. MATLAB tut
 | [II. Classification](course_content/ii_classification/) | Sort nuts and bolts from images; CNNs and deployment constraints | Grouped split, robustness/failure analysis, deployment test |
 | [III. Dimensionality reduction and clustering](course_content/iii_dimensionality_reduction_and_clustering/) | Extract structure from boiling images; PCA/SVD and clustering | Reconstruction, stability, physical interpretation |
 | [IV. Segmentation and object detection](course_content/iv_segmentation_and_object_detection/) | Identify bubbles and objects; U-Net, YOLO, transfer learning | Held-out condition performance, visual error audit |
-| [V. Advanced topics](course_content/v_reinforcement_learning/) | Explore reinforcement learning, generative models, or sequence prediction | Hypothesis, baseline, controlled evaluation, defense |
-| [VI. Physics-informed neural networks](course_content/vi_physics_informed_neural_networks/) | Solve and invert transient heat conduction; PINNs | Analytical/numerical verification, inverse estimate, failure audit |
+| [V. Reinforcement learning](course_content/v_reinforcement_learning/) | Make bounded sequential decisions; Q-learning and policy evaluation | Baseline policy, constraint audit, perturbed-condition evaluation |
+| [VI. Generative models](course_content/vi_generative_models/) | Evaluate when synthetic or reconstructed engineering data are credible | **Under development**; not yet a current assignment |
+| [VII. Time-series forecasting](course_content/vii_time_series_forecasting/) | Forecast boiling dynamics; sequence-to-sequence RNN/GRU/LSTM candidates | **Validation refresh required** before graded use |
+| [VIII. Physics-informed neural networks](course_content/viii_physics_informed_neural_networks/) | Solve and invert transient heat conduction; PINNs | Analytical/numerical verification, inverse estimate, failure audit |
 
 See [COURSE_MAP.md](COURSE_MAP.md) for prerequisites, suggested sequencing, and instructor-facing assessment checkpoints.
 

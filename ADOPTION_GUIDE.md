@@ -10,7 +10,7 @@
 
 ## Use several modules
 
-Start with regression and classification before vision or advanced topics. Pair each new method with one explicit engineering decision, a baseline, an independent test, and a failure-analysis requirement. Use [COURSE_MAP.md](COURSE_MAP.md) for the recommended progression.
+Start with regression and classification before vision or an advanced-track module. Pair each new method with one explicit engineering decision, a baseline, an independent test, and a failure-analysis requirement. Use [COURSE_MAP.md](COURSE_MAP.md) for the recommended progression.
 
 ## Adapt responsibly
 

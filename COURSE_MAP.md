@@ -11,8 +11,10 @@ The modules are ordered to build from supervised learning and data hygiene to hi
 | 4-5 | II. Classification | I | Image pipeline, group splits, threshold decisions | Diagnose a misclassification and confidence threshold |
 | 6-7 | III. PCA and clustering | I-II | Representations, reconstruction, cluster stability | Explain a principal component using representative images |
 | 8-10 | IV. Segmentation/object detection | II | Label quality, transfer learning, visual validation | Inspect and explain failed predictions |
-| 11-12 | V. Advanced topics | Foundations plus relevant prior module | Sequential decisions, generative models, or forecasting | Present hypothesis, baseline, and limitation |
-| 13-14 | VI. PINNs | Calculus, differential equations, neural networks | Governing equations, inverse problems, model-form error | Modify a boundary condition and predict its effect |
+| 11-12 | Advanced-track selection: V. Reinforcement learning, VI. Generative models, or VII. Time-series forecasting | Foundations plus relevant prior module | Sequential decisions, synthetic data, or dynamic forecasting | Present hypothesis, baseline, and limitation |
+| 13-14 | VIII. PINNs | Calculus, differential equations, neural networks | Governing equations, inverse problems, model-form error | Modify a boundary condition and predict its effect |
+
+The advanced-track modules are alternatives in a typical one-semester offering. Module VI is under development, and Module VII requires a validation refresh before it is used as graded material.
 
 ## Minimum competency standard
 

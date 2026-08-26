@@ -1,4 +1,4 @@
-# Topic 6 - Physics-Informed Neural Networks
+# VIII. Physics-Informed Neural Networks
 
 Physics-informed neural networks (PINNs) combine neural-network approximation with governing equations. In this module, a neural network approximates the transient temperature field in a one-dimensional rod while the heat equation, boundary conditions, and initial condition constrain its training.
 
