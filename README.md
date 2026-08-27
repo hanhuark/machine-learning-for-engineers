@@ -65,20 +65,43 @@ Each module should state data provenance, evidence class, units, split rules, li
 
 Do not upload student records, unpublished data, confidential sponsor data, restricted datasets, or material without redistribution permission.
 
+## Cite this curriculum
+
+If this curriculum, its modules, or substantial adapted material informs a publication, course design, or other scholarly work, please cite the curriculum paper:
+
+> C. Li, H. Hu, C. Dunlap, N. House, and J. Wai, “Giving Mechanical Engineers Intelligent Tools: A Project-Based AI Education Curriculum in Thermal Engineering,” *arXiv:2608.26056* [cs.CY], 2026. https://doi.org/10.48550/arXiv.2608.26056
+
+```bibtex
+@article{li2026giving,
+  title = {Giving Mechanical Engineers Intelligent Tools: A Project-Based AI Education Curriculum in Thermal Engineering},
+  author = {Li, Changgen and Hu, Han and Dunlap, Christy and House, Nathaniel and Wai, Jonathan},
+  year = {2026},
+  eprint = {2608.26056},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CY},
+  doi = {10.48550/arXiv.2608.26056},
+  url = {https://arxiv.org/abs/2608.26056}
+}
+```
+
+This is a request for scholarly attribution, not a condition of the [BSD 3-Clause License](LICENSE). The repository's machine-readable metadata, including this preferred citation, is in [CITATION.cff](CITATION.cff).
+
 ## For instructors and adopters
 
 - [Instructor guide](INSTRUCTOR_GUIDE.md): suggested pacing, assessment design, and operating boundaries.
 - [Adoption guide](ADOPTION_GUIDE.md): how to use one or more modules in another course.
 - [Contributing guide](CONTRIBUTING.md): how to suggest corrections or improvements.
-- [Citation metadata](CITATION.cff): how to cite this repository.
+- [Citation metadata](CITATION.cff): preferred scholarly citation and repository metadata.
 
 ## Acknowledgments and evidence of impact
 
 The course was developed by [Han Hu](https://engineering.uark.edu/directory/index/uid/hanhu/name/Han+Hu/) and [Christy Dunlap](https://cldunlap73.github.io/) in the [Department of Mechanical Engineering](https://mechanical-engineering.uark.edu/) at the University of Arkansas. Course development has been supported by the department, the Arkansas NSF EPSCoR DART Project, and the MathWorks Curriculum Development Support program. Experimental datasets and instructional material were prepared with contributions acknowledged in the module materials.
 
-Related educational and project outcomes are listed below. The course's mechanical-engineering integration, real data, peer review, and project work are deliberate parts of its learning design.
+Related educational and project outcomes are listed below as context. The course's mechanical-engineering integration, real data, peer review, and project work are deliberate parts of its learning design.
 
-## Related publications and project outcomes
+## Related course and project outcomes
+
+These papers are contextual course and project outcomes, not the requested citation for reuse or adaptation of this repository; please use the curriculum paper above.
 
 ### Course/project outcomes
 

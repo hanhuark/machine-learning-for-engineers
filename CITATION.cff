@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this curriculum or adapt its materials, please cite it using the metadata below."
+message: "If this curriculum or its adapted materials inform your research, teaching, or publication, please cite the preferred citation below."
 title: "Machine Learning for Engineers: Project-Based AI for Physical Systems"
 type: software
 version: 1.0.0
@@ -15,3 +15,20 @@ keywords:
   - engineering education
   - thermal fluids
   - physics-informed neural networks
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Li
+      given-names: Changgen
+    - family-names: Hu
+      given-names: Han
+    - family-names: Dunlap
+      given-names: Christy
+    - family-names: House
+      given-names: Nathaniel
+    - family-names: Wai
+      given-names: Jonathan
+  title: "Giving Mechanical Engineers Intelligent Tools: A Project-Based AI Education Curriculum in Thermal Engineering"
+  doi: "10.48550/arXiv.2608.26056"
+  url: "https://arxiv.org/abs/2608.26056"
+  date-released: "2026-08-26"

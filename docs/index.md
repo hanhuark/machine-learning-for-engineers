@@ -46,6 +46,6 @@ Read the [curriculum architecture and roadmap](../CURRICULUM_ARCHITECTURE.md) fo
 
 ## Evidence and reuse
 
-The repository includes [student project examples](../project_examples/), a reusable [data-card template](../teaching_resources/DATA_CARD_TEMPLATE.md), and a [reproducibility checklist](../teaching_resources/REPRODUCIBILITY_CHECKLIST.md). Related educational publications and project outcomes are listed in the [main README](../README.md#related-publications-and-project-outcomes).
+The repository includes [student project examples](../project_examples/), a reusable [data-card template](../teaching_resources/DATA_CARD_TEMPLATE.md), and a [reproducibility checklist](../teaching_resources/REPRODUCIBILITY_CHECKLIST.md). [Related course and project outcomes](../README.md#related-course-and-project-outcomes) are retained as contextual evidence, not as the primary citation.
 
-Please cite the curriculum using its [citation metadata](../CITATION.cff), preserve attribution and the BSD 3-Clause license, and do not upload student records, private assessment material, or restricted data.
+The preferred scholarly citation is [Li et al. (2026)](https://arxiv.org/abs/2608.26056). If this curriculum or adapted material informs published or other scholarly work, please cite it; the exportable metadata is in [`CITATION.cff`](../CITATION.cff). Preserve attribution and the BSD 3-Clause license, and do not upload student records, private assessment material, or restricted data.
