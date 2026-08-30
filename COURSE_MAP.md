@@ -2,11 +2,11 @@
 
 ## Recommended progression
 
-The modules are ordered by engineering task and evidence burden, not by a catalog of model families. The foundational sequence is a recommendation, not a prerequisite chain for reuse. Introduce the AI-agent harness boundary during the first week, then assess it after students have completed at least one programming-based assignment.
+The modules are ordered by engineering task and evidence burden, not by a catalog of model families. The foundational sequence is a recommendation, not a prerequisite chain for reuse. Introduce the [engineering AI-literacy framework](teaching_resources/ENGINEERING_AI_LITERACY_FRAMEWORK.md) and AI-agent harness boundary during the first week, then assess them after students have completed at least one programming-based assignment.
 
 | Week(s) | Module | Prerequisites | Engineering emphasis | Check for understanding |
 | --- | --- | --- | --- | --- |
-| 1 | Foundations + IX orientation | Python, arrays, plotting, basic probability | Units, data tables, train/validation/test purpose, AI-use boundary | Short supervised code-reading and metric quiz |
+| 1 | Foundations + AI-literacy and IX orientation | Python, arrays, plotting, basic probability | Units, data tables, train/validation/test purpose, AI capabilities/limits, data/tool boundary | Short supervised code-reading and metric quiz plus a policy/AI-literacy check |
 | 2-3 | I. Regression | Foundations | Feature availability, forecast vs. explanation, residuals | Defend one feature exclusion and one baseline |
 | 4-5 | II. Classification | I | Image pipeline, group splits, threshold decisions | Diagnose a misclassification and confidence threshold |
 | 6 | III. PCA and clustering | I-II | Representations, reconstruction, cluster stability | Explain a principal component using representative images |
@@ -26,7 +26,8 @@ By the end of the course, a student should be able to independently:
 3. Establish a simple baseline before claiming a complex model is useful.
 4. Evaluate performance on meaningful held-out conditions and inspect failures.
 5. State whether results demonstrate implementation, verification, validation, or only a screening-level result.
-6. Use generative AI responsibly, verify its claims, and explain submitted work.
+6. Specify an AI-assisted task with relevant variables, units, constraints, evidence needs, and data boundaries.
+7. Use generative AI responsibly, verify its claims, and explain submitted work.
 
 ## Assessment checkpoints
 

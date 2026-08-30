@@ -17,6 +17,7 @@ An open curriculum for students and instructors who want to do more than run a m
 | --- | --- |
 | Student learning a method | Read the [course map](../COURSE_MAP.md), then select a module and complete its tutorial before attempting the assignment. |
 | Instructor adopting one module | Use the [adoption guide](../ADOPTION_GUIDE.md) and the [instructor guide](../INSTRUCTOR_GUIDE.md). |
+| Instructor infusing AI literacy | Start with the [engineering AI-literacy framework](../teaching_resources/ENGINEERING_AI_LITERACY_FRAMEWORK.md), then adapt the assignment modes and evidence to your context. |
 | Instructor designing AI-resilient assessment | Start with the [assessment and AI policy](../teaching_resources/ASSESSMENT_AND_AI_POLICY.md) and shared [engineering-ML rubric](../teaching_resources/ENGINEERING_ML_RUBRIC.md). |
 | Contributor | Read the [contributing guide](../CONTRIBUTING.md), especially the data-rights and student-information boundaries. |
 
@@ -46,6 +47,6 @@ Read the [curriculum architecture and roadmap](../CURRICULUM_ARCHITECTURE.md) fo
 
 ## Evidence and reuse
 
-The repository includes [student project examples](../project_examples/), a reusable [data-card template](../teaching_resources/DATA_CARD_TEMPLATE.md), and a [reproducibility checklist](../teaching_resources/REPRODUCIBILITY_CHECKLIST.md). [Related course and project outcomes](../README.md#related-course-and-project-outcomes) are retained as contextual evidence, not as the primary citation.
+The repository includes [student project examples](../project_examples/), a reusable [data-card template](../teaching_resources/DATA_CARD_TEMPLATE.md), a [reproducibility checklist](../teaching_resources/REPRODUCIBILITY_CHECKLIST.md), and an [engineering AI-literacy framework](../teaching_resources/ENGINEERING_AI_LITERACY_FRAMEWORK.md). The [AI-literacy evidence brief](AI_LITERACY_EVIDENCE_BRIEF.md) distinguishes public guidance, institutional practice, and the limits of the current evidence. [Related course and project outcomes](../README.md#related-course-and-project-outcomes) are retained as contextual evidence, not as the primary citation.
 
 The preferred scholarly citation is [Li et al. (2026)](https://arxiv.org/abs/2608.26056). If this curriculum or adapted material informs published or other scholarly work, please cite it; the exportable metadata is in [`CITATION.cff`](../CITATION.cff). Preserve attribution and the BSD 3-Clause license, and do not upload student records, private assessment material, or restricted data.

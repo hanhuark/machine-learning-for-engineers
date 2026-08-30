@@ -2,7 +2,7 @@
 
 > **Originating implementation:** [MEEG 54403: Machine Learning for Mechanical Engineers](https://mechanical-engineering.uark.edu/) at the University of Arkansas. The course is ongoing; this repository is designed for that course and for adaptation by other engineering programs.
 
-An open, project-based curriculum for learning to formulate, build, verify, and critique machine-learning workflows for physical engineering systems. It is intended for upper-level undergraduate and graduate students, instructors adapting individual modules, and engineers building stronger data-driven analysis habits.
+An open, project-based AI/ML and AI-literacy curriculum for learning to formulate, build, verify, and critique machine-learning workflows for physical engineering systems. It is intended for upper-level undergraduate and graduate students, instructors adapting individual modules, and engineers building stronger data-driven analysis habits.
 
 **Start with the [course gateway](docs/index.md),** choose a module from the map below, and use the [adoption guide](ADOPTION_GUIDE.md) to adapt it responsibly.
 
@@ -19,6 +19,10 @@ The course uses Python tutorials as the primary reproducible pathway. MATLAB tut
 - use generative-AI tools responsibly while independently verifying their outputs;
 - design and audit bounded AI-agent harnesses for engineering workflows;
 - communicate reproducible, evidence-bounded technical conclusions.
+
+## Engineering AI literacy
+
+Students learn to use AI as accountable engineering practitioners: decide when an AI method is appropriate, specify the task and constraints, protect data and respect rights, verify outputs against independent evidence, and communicate limitations. The [engineering AI-literacy framework](teaching_resources/ENGINEERING_AI_LITERACY_FRAMEWORK.md) maps these outcomes across the course and distinguishes AI fluency from engineering competence. The [evidence brief](docs/AI_LITERACY_EVIDENCE_BRIEF.md) summarizes public guidance, current university implementations, and remaining gaps that inform this approach.
 
 ## Course map
 
@@ -90,6 +94,7 @@ This is a request for scholarly attribution, not a condition of the [BSD 3-Claus
 
 - [Instructor guide](INSTRUCTOR_GUIDE.md): suggested pacing, assessment design, and operating boundaries.
 - [Adoption guide](ADOPTION_GUIDE.md): how to use one or more modules in another course.
+- [Engineering AI-literacy framework](teaching_resources/ENGINEERING_AI_LITERACY_FRAMEWORK.md): outcomes, progression, module mapping, and assessment evidence.
 - [Contributing guide](CONTRIBUTING.md): how to suggest corrections or improvements.
 - [Citation metadata](CITATION.cff): preferred scholarly citation and repository metadata.
 

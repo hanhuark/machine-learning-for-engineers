@@ -4,6 +4,8 @@
 
 This template supports transparent, learning-centered use of generative-AI tools in an engineering machine-learning course. It should be adapted to institutional policy and the current course syllabus.
 
+Use it with the [engineering AI-literacy framework](ENGINEERING_AI_LITERACY_FRAMEWORK.md). The intended outcomes are not only prompt/tool fluency, but also task selection, data provenance, responsible use, independent verification, and accountable communication.
+
 ## Three activity types
 
 | Type | Permitted tools | Evidence of learning |
