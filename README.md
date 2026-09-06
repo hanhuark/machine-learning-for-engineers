@@ -4,7 +4,7 @@
 
 An open, project-based AI/ML and AI-literacy curriculum for learning to formulate, build, verify, and critique machine-learning workflows for physical engineering systems. It is intended for upper-level undergraduate and graduate students, instructors adapting individual modules, and engineers building stronger data-driven analysis habits.
 
-**Start with the [course gateway](docs/index.md),** choose a module from the map below, and use the [adoption guide](ADOPTION_GUIDE.md) to adapt it responsibly.
+**Start with the [course gateway](docs/index.md).** New or self-directed learners can begin with the browser-friendly [First 30 minutes](learning_paths/00_first_30_minutes/); students can then choose a module from the map below, and instructors can use the [adoption guide](ADOPTION_GUIDE.md) to adapt it responsibly.
 
 See [IMPLEMENTATIONS.md](IMPLEMENTATIONS.md) for the originating course and a transparent record of confirmed implementations as the curriculum is adopted elsewhere.
 
@@ -40,15 +40,21 @@ Students learn to use AI as accountable engineering practitioners: decide when a
 
 See [COURSE_MAP.md](COURSE_MAP.md) for prerequisites, suggested sequencing, and instructor-facing assessment checkpoints.
 See [CURRICULUM_ARCHITECTURE.md](CURRICULUM_ARCHITECTURE.md) for the module-readiness review, decisions on module boundaries, and the planned industrial-AI roadmap.
+See [MODULE_STATUS.md](MODULE_STATUS.md) for learner level, compute/access expectations, and the distinction between exploratory material and content ready for formal assignment.
 
 ## Start here
 
-1. Read the relevant module README and its data-access instructions.
-2. Use the tutorial as a guided learning resource, not as a finished assessment submission.
-3. Complete the current assignment specification and document assumptions, data provenance, validation, and limitations.
-4. Run the module's documented environment and tests when they are provided.
+1. If you are new to ML, complete the [First 30 minutes](learning_paths/00_first_30_minutes/) and its self-check first.
+2. Read the relevant module README and its data-access instructions.
+3. Use the tutorial as a guided learning resource, not as a finished assessment submission.
+4. Complete the current assignment specification and document assumptions, data provenance, validation, and limitations.
+5. Run the module's documented environment and tests when they are provided.
 
 The [prerequisites](prerequisites/) folder includes a Visual Studio Code introduction. The [project gallery](project_examples/) contains student-contributed examples shared with permission.
+
+## Expand across engineering domains
+
+The curriculum uses one shared ML core rather than separate introductory courses for each discipline. [Engineering application studios](case_studies/) connect the same methods, evidence standards, and assessment design to discipline-led problems. The initial proposed studio roadmap prioritizes the College of Engineering Priority Research Growth Areas: Materials, Semiconductors & Power Electronics; Food Systems & Nutrition; Metabolic Health; Supply Chain and Contested Logistics; and Lithium & Critical Minerals. The roadmap does not imply confirmed partnerships or public-data availability; each case requires contributor review and rights-cleared data or a documented alternative before release.
 
 ## Assessment and generative AI
 
