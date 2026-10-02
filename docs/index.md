@@ -25,6 +25,8 @@ An open curriculum for students and instructors who want to do more than run a m
 
 Confirmed course implementations and adaptations are listed in [IMPLEMENTATIONS.md](../IMPLEMENTATIONS.md).
 
+Researchers who want to apply related AI-agent practices to active research can use the companion [NED3 Open Engineering AI](open-engineering-ai.md) page to choose between this curriculum and the [Mechanical Engineering Research Skill](https://github.com/hanhuark/mechanical-engineering-research-skill).
+
 Before selecting a module, check [module status and learner expectations](../MODULE_STATUS.md). It identifies the expected preparation, compute needs, and whether a module is ready to learn, ready to assign, requires a validation refresh, or remains in development.
 
 ## What makes this different

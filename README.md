@@ -52,6 +52,10 @@ See [MODULE_STATUS.md](MODULE_STATUS.md) for learner level, compute/access expec
 
 The [prerequisites](prerequisites/) folder includes a Visual Studio Code introduction. The [project gallery](project_examples/) contains student-contributed examples shared with permission.
 
+## Research-Workflow Companion
+
+For researchers who want to apply AI agents to bounded technical-writing, literature-review, data-analysis, proposal, mentoring, or thermal-fluid workflow tasks, see the [Mechanical Engineering Research Skill](https://github.com/hanhuark/mechanical-engineering-research-skill). The [NED3 Open Engineering AI page](docs/open-engineering-ai.md) explains how the curriculum and plugin serve different, complementary purposes.
+
 ## Expand across engineering domains
 
 The curriculum uses one shared ML core rather than separate introductory courses for each discipline. [Engineering application studios](case_studies/) connect the same methods, evidence standards, and assessment design to discipline-led problems. The initial proposed studio roadmap prioritizes the College of Engineering Priority Research Growth Areas: Materials, Semiconductors & Power Electronics; Food Systems & Nutrition; Metabolic Health; Supply Chain and Contested Logistics; and Lithium & Critical Minerals. The roadmap does not imply confirmed partnerships or public-data availability; each case requires contributor review and rights-cleared data or a documented alternative before release.
