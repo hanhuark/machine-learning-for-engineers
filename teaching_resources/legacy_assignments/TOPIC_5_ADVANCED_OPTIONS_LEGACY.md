@@ -11,7 +11,7 @@ The goal of this homework assignment is to give you the opportunity to explore a
 
 **Tutorial**:<br> [![colab1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11Qxu8kPlwHQBEB12R11LRJ6erQOk6FY1?usp=sharing)
 
-![rl](./static/rlwalkgif.gif)
+![rl](../../course_content/v_reinforcement_learning/static/rlwalkgif.gif)
 
 Reinforcement learning is a type of machine learning that allows agents to learn with rewards and penalties. These models are often used for controlling robots. Q-Learning is a common and basic type of reinforcement learning and will be the type used in this assignment.
 

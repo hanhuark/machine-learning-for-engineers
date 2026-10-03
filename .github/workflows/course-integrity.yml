@@ -1,0 +1,22 @@
+name: Course integrity
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  public-curriculum-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify public curriculum navigation and readiness claims
+        run: python tools/check_course_integrity.py
+      - name: Run the integrity regression test
+        run: python -m unittest discover -s tests -p "test_course_integrity.py"

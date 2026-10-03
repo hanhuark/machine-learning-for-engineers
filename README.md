@@ -82,6 +82,16 @@ Each module should state data provenance, evidence class, units, split rules, li
 
 Do not upload student records, unpublished data, confidential sponsor data, restricted datasets, or material without redistribution permission.
 
+### Repository maintenance check
+
+Before opening an issue or pull request that changes public navigation or module readiness, run:
+
+```bash
+python tools/check_course_integrity.py
+```
+
+The offline check verifies repository-internal Markdown routes and confirms that a module labeled **Ready to assign** in `MODULE_STATUS.md` contains a current assignment file. It does not validate external websites, execute tutorials, or establish the scientific validity of an activity.
+
 ## Cite this curriculum
 
 If this curriculum, its modules, or substantial adapted material informs a publication, course design, or other scholarly work, please cite the curriculum paper:

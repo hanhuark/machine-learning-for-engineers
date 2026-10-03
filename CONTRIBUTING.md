@@ -16,6 +16,7 @@ Contributions should improve engineering learning, reproducibility, accessibilit
 - Preserve units, assumptions, data provenance, citations, and current module boundaries.
 - Add or update tests when code behavior changes.
 - Run the relevant tutorial/test command and report what was verified.
+- Before submitting Markdown or curriculum-structure changes, run `python tools/check_course_integrity.py`. This offline check verifies repository-internal Markdown routes and prevents a module from being marked **Ready to assign** without a current assignment file.
 - Avoid replacing a student learning task with an opaque finished solution.
 
 ## Content principles
