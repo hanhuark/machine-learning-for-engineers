@@ -70,6 +70,7 @@ This repository does not rely on AI detection as evidence of learning. Current a
 Use:
 
 - [assessment policy](teaching_resources/ASSESSMENT_AND_AI_POLICY.md) for course-level expectations;
+- [quiz readiness guide](teaching_resources/QUIZ_READINESS_GUIDE.md) for the engineering-reasoning patterns assessed in short supervised checks;
 - [AI-use record template](teaching_resources/AI_USE_TEMPLATE.md) for AI-assisted work;
 - [shared rubric](teaching_resources/ENGINEERING_ML_RUBRIC.md) for grading;
 - [current Homework 1 specification](course_content/i_regression/ASSIGNMENT_AI_RESILIENT.md), [current Homework 2 specification](course_content/ii_classification/ASSIGNMENT_AI_RESILIENT.md), [current structure-discovery specification](course_content/iii_dimensionality_reduction_and_clustering/ASSIGNMENT_AI_RESILIENT.md), and [current visual-measurement specification](course_content/iv_segmentation_and_object_detection/ASSIGNMENT_AI_RESILIENT.md).

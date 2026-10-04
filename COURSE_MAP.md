@@ -40,3 +40,4 @@ Use multiple sources of evidence rather than treating a take-home notebook as pr
 - an authentic final project with a designated held-out evaluation protocol.
 
 The shared [assessment policy](teaching_resources/ASSESSMENT_AND_AI_POLICY.md) and [rubric](teaching_resources/ENGINEERING_ML_RUBRIC.md) specify the reusable framework.
+The [quiz readiness guide](teaching_resources/QUIZ_READINESS_GUIDE.md) explains the engineering-reasoning patterns expected in short supervised checks without exposing instructor-held quiz items.
