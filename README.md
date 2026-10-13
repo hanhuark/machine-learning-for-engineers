@@ -4,6 +4,9 @@
 
 An open, project-based AI/ML and AI-literacy curriculum for learning to formulate, build, verify, and critique machine-learning workflows for physical engineering systems. It is intended for upper-level undergraduate and graduate students, instructors adapting individual modules, and engineers building stronger data-driven analysis habits.
 
+Repository scope, evidence, and reuse boundaries are also available in the
+[NED3 resource manifest](.ned3/resource-manifest-v0.1.json).
+
 **Start with the [course gateway](docs/index.md).** New or self-directed learners can begin with the browser-friendly [First 30 minutes](learning_paths/00_first_30_minutes/); students can then choose a module from the map below, and instructors can use the [adoption guide](ADOPTION_GUIDE.md) to adapt it responsibly.
 
 See [IMPLEMENTATIONS.md](IMPLEMENTATIONS.md) for the originating course and a transparent record of confirmed implementations as the curriculum is adopted elsewhere.
