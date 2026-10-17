@@ -46,6 +46,19 @@ The tutorial writes held-out RMSE, MAE, and maximum absolute error for
 `chip1_tmax|temperature`. Interpret all temperatures in K. The script does not
 use `pdrop_*` because the source deposit does not record its pressure unit.
 
+## Verified run
+
+On 2026-10-17, the pinned subset download and baseline ran in a clean Windows
+virtual environment using NumPy 2.5.4 and `huggingface_hub` 2.2.0. The 141
+source files occupied 0.091 GiB after download. The 40-simulation held-out
+linear-baseline result for `chip1_tmax|temperature` was RMSE = 1.56 K, MAE =
+1.25 K, and maximum absolute error = 3.85 K. This is a reproducibility smoke
+test for the specified simulated-CFD split, not an independent CFD-validation,
+hardware-validation, or extrapolation result.
+
+On that host, the baseline calculation completed in under one second; download
+time depends on network throughput and Hugging Face access limits.
+
 ## Before calling this ready to learn
 
 1. Run the route from a clean environment against a pinned source revision.

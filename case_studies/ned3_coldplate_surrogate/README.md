@@ -1,8 +1,9 @@
 # NED3 cold plate surrogate studio
 
-> **Status: candidate-verified; proposed teaching package.** The external
-> source is public, but this repository does not yet provide an executable
-> tutorial or graded assignment.
+> **Status: ready to learn; not ready to assign.** The pinned teaching route
+> was executed against the public source on 2026-10-17. It does not yet include
+> an energy-balance baseline, protected individual evidence, or a graded
+> assignment.
 
 ## Engineering decision
 
@@ -40,7 +41,8 @@ The source card notes that the `pdrop_*` key names are inherited export labels
 and that their pressure unit is not recorded; they must not be used as a
 unit-qualified target without recovering that information.
 
-See the local [data card](data_card.md) and the [course-data registry](../../course_data/).
+See the local [data card](data_card.md), [reproducibility record](reproducibility.md),
+and the [course-data registry](../../course_data/).
 
 ## Release steps before use
 
@@ -49,7 +51,7 @@ See the local [data card](data_card.md) and the [course-data registry](../../cou
    release; do not commit simulation payloads here.
 3. Implement an energy-balance/thermal-resistance baseline and a linear model
    before a POD-NN route.
-4. Run the [tutorial route](tutorials/) in a clean Python environment and
-   verify all inputs, targets, units, and the held-out split.
+4. Add an energy-balance or thermal-resistance calculation before presenting
+   the linear baseline as a useful engineering comparator.
 5. Add a failure audit requiring students to explain a physically implausible
    or out-of-domain prediction.
