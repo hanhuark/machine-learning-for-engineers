@@ -19,13 +19,13 @@ Copy the materials in [_case_template](_case_template/) and complete every appli
 ## NED3 data-backed studio candidates
 
 The following records connect the shared ML core to NED3 resources without
-copying raw research payloads into this repository. They are **proposed**
-until the stated release checks, runnable tutorial, and instructor verification
-are complete.
+copying raw research payloads into this repository. Each row states its own
+release status; do not treat a proposed studio as ready simply because another
+studio has completed its release checks.
 
 | Candidate | Shared methods | Current boundary |
 | --- | --- | --- |
-| [Cold plate surrogate](ned3_coldplate_surrogate/) | Regression, PCA/POD, surrogate modeling | Public simulated source; needs a checksummed lesson subset and runnable tutorial. |
+| [Cold plate surrogate](ned3_coldplate_surrogate/) | Regression, PCA/POD, surrogate modeling | **Ready to assign:** public simulated source, pinned checksummed subset, runnable baselines, and an instructor-held individual check. |
 | [BoilingBench CV](ned3_boilingbench_cv/) | Vision, segmentation, domain shift | Public/local release records need reconciliation before a course download is released. |
 | [Multimodal boiling signals](ned3_boiling_multimodal_signals/) | Features, time series, multimodal reasoning | Track-specific rights audit and a lightweight feature table are required. |
 | [Flow-boiling evidence audit](ned3_flow_boiling_evidence_audit/) | Segmentation critique, time-base audit, AI verification | Public source; designed first as an evidence-quality exercise, not a general benchmark. |
