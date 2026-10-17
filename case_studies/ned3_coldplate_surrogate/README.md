@@ -1,9 +1,9 @@
 # NED3 cold plate surrogate studio
 
-> **Status: ready to learn; not ready to assign.** The pinned teaching route
-> was executed against the public source on 2026-10-17. It includes a
-> constrained energy-balance and a linear baseline, but does not yet include
-> protected individual evidence or a graded assignment.
+> **Status: ready to assign.** The pinned teaching route, current assignment,
+> and instructor-held individual-verification design were reviewed locally on
+> 2026-10-17. It remains a simulated-CFD learning case, not hardware
+> validation.
 
 ## Engineering decision
 
@@ -30,6 +30,13 @@ while reusing the shared ML core. It can support regression in Module I,
 PCA/POD in Module III, a constrained inverse-design discussion in Module VI,
 and a comparison with physics-aware approaches in Module VIII.
 
+## Audience, prerequisites, and expected effort
+
+The case is designed for learners who have completed the regression module and
+can run a documented Python command. It requires basic heat-transfer concepts:
+heat rate, mass flow rate, energy balance, and temperature units. Budget about
+4–6 hours after the instructor has provisioned the checksummed subset.
+
 ## Source and limitations
 
 Use the canonical [ColdPlate CFD dataset card](https://huggingface.co/datasets/UARK-NED3/ColdPlate-CFD-2000sims)
@@ -53,3 +60,6 @@ and the [course-data registry](../../course_data/).
    not treat its fitted effective heat capacity as a measured material property.
 4. Add a failure audit requiring students to explain a physically implausible
    or out-of-domain prediction.
+
+The current student-facing [assignment](assignment.md) and
+[instructor notes](instructor_notes.md) specify the bounded assessment route.
