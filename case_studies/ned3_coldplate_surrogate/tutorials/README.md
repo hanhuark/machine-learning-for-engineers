@@ -21,7 +21,7 @@ before using a later revision; do not substitute a moving branch name.
 python download_subset.py --revision 58911fc77390a70a6c71da0612e02b4976976283
 ```
 
-The command prints the planned 140-file subset: 80 training simulations, 20
+The command prints the planned 141-file subset: 80 training simulations, 20
 validation simulations, 40 test simulations, and the DOE configuration. This
 is a bounded teaching-replication split, not an extrapolation or hardware
 validation test.
