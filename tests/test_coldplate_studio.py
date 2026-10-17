@@ -12,7 +12,14 @@ REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 TUTORIAL_DIRECTORY = REPOSITORY_ROOT / "case_studies" / "ned3_coldplate_surrogate" / "tutorials"
 sys.path.insert(0, str(TUTORIAL_DIRECTORY))
 
-from coldplate_baseline import build_design_matrix, evaluate_regression, fit_linear_baseline  # noqa: E402
+from coldplate_baseline import (  # noqa: E402
+    build_design_matrix,
+    build_energy_balance_inputs,
+    evaluate_regression,
+    fit_effective_heat_capacity,
+    fit_linear_baseline,
+    predict_outlet_energy_balance,
+)
 from download_subset import DEFAULT_TEST_IDS, DEFAULT_TRAIN_IDS, DEFAULT_VALIDATION_IDS, subset_plan  # noqa: E402
 
 
@@ -53,6 +60,37 @@ class ColdPlateBaselineTests(unittest.TestCase):
         np.testing.assert_allclose(predicted, test_y)
         self.assertAlmostEqual(metrics["rmse"], 0.0)
         self.assertAlmostEqual(metrics["mae"], 0.0)
+
+    def test_energy_balance_recovers_a_constant_effective_heat_capacity(self):
+        names = [
+            "chip1.thermal.heat_flux",
+            "chip2.thermal.heat_flux",
+            "inlet1.momentum.mass_flow_rate",
+            "inlet1.thermal.total_temperature",
+            "inlet2.momentum.mass_flow_rate",
+            "inlet2.thermal.total_temperature",
+        ]
+        features = np.array(
+            [
+                [100.0, 200.0, 2.0, 300.0, 3.0, 320.0],
+                [200.0, 100.0, 4.0, 310.0, 1.0, 300.0],
+                [150.0, 150.0, 1.0, 290.0, 4.0, 330.0],
+            ]
+        )
+        power, mass_flow, mixed_inlet = build_energy_balance_inputs(
+            names, features, chip_area_m2=2.0
+        )
+        expected_outlet = mixed_inlet + power / (mass_flow * 10.0)
+
+        heat_capacity = fit_effective_heat_capacity(
+            power, mass_flow, mixed_inlet, expected_outlet
+        )
+        predicted = predict_outlet_energy_balance(
+            power, mass_flow, mixed_inlet, heat_capacity
+        )
+
+        self.assertAlmostEqual(heat_capacity, 10.0)
+        np.testing.assert_allclose(predicted, expected_outlet)
 
 
 if __name__ == "__main__":

@@ -18,6 +18,7 @@
 ```bash
 python download_subset.py --revision 58911fc77390a70a6c71da0612e02b4976976283 --download --destination D:\MEEG-54403_course_data\coldplate_subset
 python run_linear_baseline.py --data-root D:\MEEG-54403_course_data\coldplate_subset --output D:\MEEG-54403_course_data\coldplate_subset\coldplate_linear_baseline_metrics.json
+python run_energy_balance_baseline.py --data-root D:\MEEG-54403_course_data\coldplate_subset --output D:\MEEG-54403_course_data\coldplate_subset\coldplate_energy_balance_metrics.json
 ```
 
 The downloader writes `teaching_subset_manifest.json`, which records the source
@@ -40,3 +41,35 @@ The model uses six declared CFD boundary-condition inputs. This result only
 checks that the released source, tutorial contract, and fixed simulated-CFD
 split run coherently. It does not establish experimental validity, geometry
 transfer, transient performance, uncertainty calibration, or safe design use.
+
+## Constrained outlet energy-balance result
+
+Using the same fixed teaching split, the tutorial fitted the training-set
+effective parameter in
+
+```text
+T_out = T_in,mix + Q_total / (m_dot_total * c_eff)
+```
+
+where `Q_total` is calculated from the two heat-flux inputs and the 0.0016 m²
+chip area used by the release's source code. The result for
+`outlet_tavg|temperature` was:
+
+| Quantity | Value |
+| --- | ---: |
+| Fitted `c_eff` | 4188.8946 J/(kg·K) |
+| RMSE | 0.0724 K |
+| MAE | 0.0532 K |
+| Maximum absolute error | 0.2139 K |
+
+The small residual is evidence that this constrained relation closely matches
+this simulated, steady-state source configuration and fixed split. It is not
+evidence that `c_eff` is a measured coolant property, that the model resolves
+each circuit separately, or that the relation transfers to a different
+geometry, fluid, operating range, or hardware system.
+
+For the same outlet target and held-out split, the six-input ordinary
+least-squares baseline gave RMSE = 1.8754 K, MAE = 1.4476 K, and maximum
+absolute error = 5.6232 K. This comparison is instructional: it illustrates
+how a physically structured relationship can be a more useful baseline than a
+generic linear fit for one response under the documented source assumptions.

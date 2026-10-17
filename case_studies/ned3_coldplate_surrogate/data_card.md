@@ -17,10 +17,16 @@
 
 ## Schema and evaluation
 
-- Inputs: six source-defined boundary conditions; recover units from `model_setup.json` before lesson release.
+- Inputs: six source-defined boundary conditions. The tutorial uses the source
+  workflow's SI interpretation—heat flux (W/m²), mass flow (kg/s), and inlet
+  temperature (K)—and the released source code's chip area (0.0016 m²). The
+  original Fluent case is not redistributed, so verify this convention against
+  the source record before changing the analysis or assigning it.
 - Targets: temperature fields in K and selected scalar temperature reports. The `pdrop_*` export names require separate unit recovery.
 - Split rule: preserve a fixed simulation-level split; never fit scalers/POD modes using held-out simulations.
-- Baselines: energy-balance or thermal-resistance estimate, then linear regression, then POD-NN.
+- Baselines: a mixed-outlet energy balance with training-fitted effective heat
+  capacity, then linear regression, then POD-NN. The fitted effective heat
+  capacity is not a measured property.
 - Metrics: temperature RMSE/MAE and maximum absolute error on held-out simulations, reported with the physical operating range.
 
 ## Known limitations

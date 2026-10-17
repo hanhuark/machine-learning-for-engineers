@@ -1,8 +1,9 @@
 # Cold-plate tutorial route
 
 This route is executable after an instructor pins a reviewed source revision
-and downloads the teaching subset outside the repository. It uses a transparent
-linear scalar-temperature baseline before any POD-NN surrogate.
+and downloads the teaching subset outside the repository. It uses an
+interpretable energy-balance baseline and a transparent linear baseline before
+any POD-NN surrogate.
 
 ## Setup
 
@@ -36,25 +37,47 @@ The script writes `teaching_subset_manifest.json` with source revision and
 SHA-256 values. Keep it with the local lesson data; do not commit it if it
 contains a local path.
 
-## Run the first baseline
+## Run two complementary baselines
 
 ```bash
 python run_linear_baseline.py --data-root C:\data\coldplate_subset
+python run_energy_balance_baseline.py --data-root C:\data\coldplate_subset
 ```
 
-The tutorial writes held-out RMSE, MAE, and maximum absolute error for
-`chip1_tmax|temperature`. Interpret all temperatures in K. The script does not
-use `pdrop_*` because the source deposit does not record its pressure unit.
+The linear tutorial writes held-out RMSE, MAE, and maximum absolute error for
+`chip1_tmax|temperature`. The energy-balance tutorial fits the single equation
+`T_out = T_in,mix + Q_total / (m_dot_total * c_eff)` to training CFD cases and
+evaluates `outlet_tavg|temperature` on held-out CFD cases. It converts each
+heat-flux boundary condition to power using the 0.0016 m² chip area recorded in
+the source release's analysis code. Temperatures are in K, mass flow is in
+kg/s, heat flux is in W/m², and `c_eff` is in J/(kg·K). `c_eff` is a fitted
+effective parameter for this simulated configuration; it is not a measured
+coolant property. The calculation treats the release's one outlet scalar as a
+mixed outlet and cannot resolve circuit-specific behavior.
+
+For an apples-to-apples model comparison, run the linear baseline on the same
+outlet target:
+
+```bash
+python run_linear_baseline.py --data-root C:\data\coldplate_subset --target outlet_tavg|temperature
+```
+
+Neither script uses `pdrop_*`, because the source deposit does not record the
+pressure unit.
 
 ## Verified run
 
-On 2026-10-17, the pinned subset download and baseline ran in a clean Windows
-virtual environment using NumPy 2.5.4 and `huggingface_hub` 2.2.0. The 141
-source files occupied 0.091 GiB after download. The 40-simulation held-out
-linear-baseline result for `chip1_tmax|temperature` was RMSE = 1.56 K, MAE =
-1.25 K, and maximum absolute error = 3.85 K. This is a reproducibility smoke
-test for the specified simulated-CFD split, not an independent CFD-validation,
-hardware-validation, or extrapolation result.
+On 2026-10-17, the pinned subset download and both baselines ran in a clean
+Windows virtual environment using NumPy 2.5.4 and `huggingface_hub` 2.2.0. The
+141 source files occupied 0.091 GiB after download. On the 40-simulation
+held-out split, the linear baseline for `chip1_tmax|temperature` had RMSE =
+1.56 K, MAE = 1.25 K, and maximum absolute error = 3.85 K. The constrained
+outlet energy balance had RMSE = 0.072 K, MAE = 0.053 K, and maximum absolute
+error = 0.214 K; its fitted `c_eff` was 4188.9 J/(kg·K). A six-input ordinary
+least-squares model on the same outlet target had RMSE = 1.875 K, MAE = 1.448
+K, and maximum absolute error = 5.623 K. These are reproducibility smoke tests
+for the specified simulated-CFD split, not independent CFD-validation,
+hardware-validation, or extrapolation results.
 
 On that host, the baseline calculation completed in under one second; download
 time depends on network throughput and Hugging Face access limits.
@@ -66,5 +89,9 @@ time depends on network throughput and Hugging Face access limits.
    `--model-setup-path` in the downloader only if the canonical card records a
    different path.
 3. Record runtime, operating-range summary, source revision, and all hashes.
-4. Add an energy-balance or thermal-resistance calculation and a failure case
-   before introducing POD-NN.
+4. For each prediction, inspect that all mass flows remain positive, all heat
+   loads remain non-negative, and the output is an outlet scalar. Flag a model
+   that violates these conditions instead of reporting its accuracy alone.
+5. Compare the energy-balance residual against the linear-model residual on the
+   same outlet target before introducing POD-NN; explain what physics the
+   simpler equation omits.

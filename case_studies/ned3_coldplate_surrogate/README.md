@@ -1,9 +1,9 @@
 # NED3 cold plate surrogate studio
 
 > **Status: ready to learn; not ready to assign.** The pinned teaching route
-> was executed against the public source on 2026-10-17. It does not yet include
-> an energy-balance baseline, protected individual evidence, or a graded
-> assignment.
+> was executed against the public source on 2026-10-17. It includes a
+> constrained energy-balance and a linear baseline, but does not yet include
+> protected individual evidence or a graded assignment.
 
 ## Engineering decision
 
@@ -17,9 +17,9 @@ should not be trusted.
 | --- | --- |
 | System boundary | A simulated liquid-cooled dual-chip pin-fin cold plate under the source deposit's steady, incompressible CFD assumptions. |
 | Evidence class | Simulated CFD fields and scalar reports; not measured hardware data. |
-| Inputs | Two chip heat-flux boundary conditions, two inlet mass-flow rates, and two inlet total temperatures. Units must be read from the source `model_setup.json` before analysis. |
+| Inputs | Two chip heat-flux boundary conditions (W/m²), two inlet mass-flow rates (kg/s), and two inlet total temperatures (K), as documented by the source release. |
 | Candidate outputs | Chip mean/maximum temperature, outlet temperature, and the central yz-plane temperature field. |
-| Baseline | Energy balance and a simple thermal-resistance or linear-regression baseline before POD-NN. |
+| Baseline | A fitted, lumped mixed-outlet energy balance plus a simple linear-regression baseline before POD-NN. |
 | Held-out unit | Independent CFD simulation, with a documented DOE-based split. |
 | Failure boundary | Do not infer transient behavior, experimental accuracy, geometry changes, or unrecorded pressure-drop units from this release. |
 
@@ -49,9 +49,7 @@ and the [course-data registry](../../course_data/).
 1. Define a fixed, small subset and record its file hashes.
 2. Publish a download script that retrieves only that subset from the canonical
    release; do not commit simulation payloads here.
-3. Implement an energy-balance/thermal-resistance baseline and a linear model
-   before a POD-NN route.
-4. Add an energy-balance or thermal-resistance calculation before presenting
-   the linear baseline as a useful engineering comparator.
-5. Add a failure audit requiring students to explain a physically implausible
+3. Keep the energy-balance baseline as a comparator before a POD-NN route; do
+   not treat its fitted effective heat capacity as a measured material property.
+4. Add a failure audit requiring students to explain a physically implausible
    or out-of-domain prediction.
