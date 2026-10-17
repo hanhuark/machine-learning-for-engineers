@@ -10,6 +10,7 @@ REPOSITORY_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPOSITORY_ROOT / "tools"))
 
 from check_course_integrity import (  # noqa: E402
+    check_dataset_manifest,
     check_internal_markdown_links,
     check_ready_to_assign_modules,
     validate_repository,
@@ -17,6 +18,42 @@ from check_course_integrity import (  # noqa: E402
 
 
 class CourseIntegrityTests(unittest.TestCase):
+    def test_dataset_manifest_requires_core_provenance_fields(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            manifest_directory = root / "course_data"
+            manifest_directory.mkdir()
+            (manifest_directory / "dataset_manifest.csv").write_text(
+                "case_id,status,source_url,license,evidence_class\n"
+                "coldplate,proposed,https://example.com,data-only,simulated\n",
+                encoding="utf-8",
+            )
+
+            findings = check_dataset_manifest(root)
+
+        self.assertEqual(
+            findings,
+            [
+                "course_data/dataset_manifest.csv: missing required column: "
+                "data_access"
+            ],
+        )
+
+    def test_dataset_manifest_accepts_complete_course_data_record(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            manifest_directory = root / "course_data"
+            manifest_directory.mkdir()
+            (manifest_directory / "dataset_manifest.csv").write_text(
+                "case_id,status,source_url,license,evidence_class,data_access\n"
+                "coldplate,proposed,https://example.com,CC0-1.0,simulated,public\n",
+                encoding="utf-8",
+            )
+
+            findings = check_dataset_manifest(root)
+
+        self.assertEqual(findings, [])
+
     def test_public_curriculum_navigation_and_readiness_claims_are_consistent(self):
         """Learners should not encounter a broken internal route or an incomplete ready claim."""
         findings = validate_repository(REPOSITORY_ROOT)

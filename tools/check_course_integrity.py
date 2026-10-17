@@ -10,6 +10,7 @@ scientific validity of an activity.
 from __future__ import annotations
 
 import argparse
+import csv
 from pathlib import Path
 import re
 from urllib.parse import unquote, urlsplit
@@ -19,6 +20,14 @@ MARKDOWN_LINK = re.compile(r"!?\[[^\]]*\]\(([^)\s]+)(?:\s+[^)]*)?\)")
 MODULE_LINK = re.compile(r"\[[^\]]+\]\(([^)]+)\)")
 EXTERNAL_SCHEMES = {"http", "https", "mailto", "tel", "data"}
 ASSIGNMENT_FILENAMES = {"ASSIGNMENT.md", "ASSIGNMENT_AI_RESILIENT.md"}
+DATASET_MANIFEST_COLUMNS = {
+    "case_id",
+    "status",
+    "source_url",
+    "license",
+    "evidence_class",
+    "data_access",
+}
 
 
 def iter_markdown_files(repository_root: Path) -> list[Path]:
@@ -100,10 +109,46 @@ def check_ready_to_assign_modules(repository_root: Path) -> list[str]:
     return findings
 
 
+def check_dataset_manifest(repository_root: Path) -> list[str]:
+    """Check that public course-data records preserve minimum provenance fields.
+
+    This deliberately checks documentation structure only. It cannot verify an
+    external dataset's current license, availability, scientific validity, or
+    redistribution permission; instructors must review those records before a
+    case becomes assignable.
+    """
+    manifest = repository_root / "course_data" / "dataset_manifest.csv"
+    if not manifest.exists():
+        return ["course_data/dataset_manifest.csv: missing dataset manifest"]
+
+    with manifest.open(encoding="utf-8", newline="") as handle:
+        reader = csv.DictReader(handle)
+        headers = set(reader.fieldnames or [])
+        findings = [
+            f"course_data/dataset_manifest.csv: missing required column: {column}"
+            for column in sorted(DATASET_MANIFEST_COLUMNS - headers)
+        ]
+        if findings:
+            return findings
+
+        for row_number, row in enumerate(reader, start=2):
+            for column in sorted(DATASET_MANIFEST_COLUMNS):
+                if not (row.get(column) or "").strip():
+                    findings.append(
+                        "course_data/dataset_manifest.csv:"
+                        f"{row_number}: missing required value: {column}"
+                    )
+    return findings
+
+
 def validate_repository(repository_root: Path) -> list[str]:
     """Return all offline curriculum-integrity findings in deterministic order."""
     root = repository_root.resolve()
-    return check_internal_markdown_links(root) + check_ready_to_assign_modules(root)
+    return (
+        check_internal_markdown_links(root)
+        + check_ready_to_assign_modules(root)
+        + check_dataset_manifest(root)
+    )
 
 
 def main() -> int:

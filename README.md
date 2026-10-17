@@ -81,6 +81,11 @@ Legacy PDF/DOCX assignments remain available for historical context. Instructors
 
 Each module should state data provenance, evidence class, units, split rules, licenses/permissions, and limitations. The [data-card template](teaching_resources/DATA_CARD_TEMPLATE.md) and [reproducibility checklist](teaching_resources/REPRODUCIBILITY_CHECKLIST.md) provide the common standard. The PINN module demonstrates this pattern with synthetic data, metadata, deterministic generation, and tests.
 
+The [course-data registry](course_data/) records candidate NED3-backed teaching
+cases without copying source archives into this repository. Its status labels
+distinguish verified public sources from cases that still require release
+reconciliation, rights review, a runnable lesson, or instructor validation.
+
 Do not upload student records, unpublished data, confidential sponsor data, restricted datasets, or material without redistribution permission.
 
 ### Repository maintenance check
