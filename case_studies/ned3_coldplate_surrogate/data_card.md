@@ -2,7 +2,7 @@
 
 ## Identity and rights
 
-- Dataset name/version: Cold Plate CFD 2000 simulations; source card accessed 2026-10-17.
+- Dataset name/version: Cold Plate CFD 2000 simulations; Hugging Face revision `58911fc77390a70a6c71da0612e02b4976976283` verified 2026-10-17.
 - Provider and stable URL/DOI: NED3 Laboratory; [Hugging Face dataset card](https://huggingface.co/datasets/UARK-NED3/ColdPlate-CFD-2000sims); [Dryad DOI](https://doi.org/10.5061/dryad.k0p2ngfp5).
 - Evidence class: simulated.
 - License: CC0 1.0 according to the source card; retain the source citation.

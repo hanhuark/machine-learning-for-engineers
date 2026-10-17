@@ -32,7 +32,9 @@ and a comparison with physics-aware approaches in Module VIII.
 ## Source and limitations
 
 Use the canonical [ColdPlate CFD dataset card](https://huggingface.co/datasets/UARK-NED3/ColdPlate-CFD-2000sims)
-and the linked Dryad record. The release documents 2,000 steady simulations,
+and the linked Dryad record. The reviewed Hugging Face revision is
+`58911fc77390a70a6c71da0612e02b4976976283` (verified 2026-10-17). The
+release documents 2,000 steady simulations,
 but a classroom lesson should download only an authorized, checksummed subset.
 The source card notes that the `pdrop_*` key names are inherited export labels
 and that their pressure unit is not recorded; they must not be used as a

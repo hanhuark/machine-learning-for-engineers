@@ -12,11 +12,13 @@ python -m pip install numpy huggingface_hub
 
 ## Plan before downloading
 
-Obtain an immutable revision from the canonical [dataset card](https://huggingface.co/datasets/UARK-NED3/ColdPlate-CFD-2000sims).
-Do not substitute a moving branch name for the reviewed revision.
+The verified revision for this draft route is
+`58911fc77390a70a6c71da0612e02b4976976283`. Confirm the canonical
+[dataset card](https://huggingface.co/datasets/UARK-NED3/ColdPlate-CFD-2000sims)
+before using a later revision; do not substitute a moving branch name.
 
 ```bash
-python download_subset.py --revision REVIEWED_COMMIT_HASH
+python download_subset.py --revision 58911fc77390a70a6c71da0612e02b4976976283
 ```
 
 The command prints the planned 140-file subset: 80 training simulations, 20
@@ -27,7 +29,7 @@ validation test.
 ## Download and record hashes
 
 ```bash
-python download_subset.py --revision REVIEWED_COMMIT_HASH --download --destination C:\data\coldplate_subset
+python download_subset.py --revision 58911fc77390a70a6c71da0612e02b4976976283 --download --destination C:\data\coldplate_subset
 ```
 
 The script writes `teaching_subset_manifest.json` with source revision and
