@@ -47,7 +47,7 @@ See the local [data card](data_card.md) and the [course-data registry](../../cou
    release; do not commit simulation payloads here.
 3. Implement an energy-balance/thermal-resistance baseline and a linear model
    before a POD-NN route.
-4. Verify all inputs, targets, units, and the held-out split in a clean Python
-   environment.
+4. Run the [tutorial route](tutorials/) in a clean Python environment and
+   verify all inputs, targets, units, and the held-out split.
 5. Add a failure audit requiring students to explain a physically implausible
    or out-of-domain prediction.
