@@ -36,6 +36,8 @@ A current assignment should require a short formulation note, a baseline control
 
 The previous multi-option Topic 5 assignment is retained for historical reference in [legacy assignments](../../teaching_resources/legacy_assignments/README.md); its generative-model and sequence-forecasting options are no longer part of this module.
 
+For a future simulation-to-hardware version, use the [embodied demonstration brief](EMBODIED_DEMONSTRATION_BRIEF.md) and the shared [physical demonstration protocol](../../hardware_and_deployment/PHYSICAL_DEMONSTRATION_PROTOCOL.md). Neither document changes this module's current conceptual/special-topic status.
+
 ## Development needed for a full engineering-control release
 
 Before treating this as a full applied RL module, add a reproducible engineering environment with explicit units and constraints, deterministic baseline policies, seeded training/evaluation, and a failure case such as reward hacking or an out-of-regime disturbance.

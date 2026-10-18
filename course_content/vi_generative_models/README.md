@@ -35,3 +35,5 @@ These losses alone do not establish physical validity, distributional coverage, 
 - an AI-use and provenance requirement that labels all synthetic outputs as synthetic.
 
 Until these are complete, instructors should not present this folder as a ready homework option.
+
+The [credibility protocol](CREDIBILITY_PROTOCOL.md) turns these requirements into a release gate for a future tutorial and assignment. It does not change the module's under-development status.

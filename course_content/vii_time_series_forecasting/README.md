@@ -32,3 +32,5 @@ The [tutorials](tutorials/) folder contains the historical Python, notebook, MAT
 ## Assessment expectation
 
 Students should submit a split plan, baseline forecast, model comparison, held-out forecast plot, error-versus-horizon analysis, and a short defense. A strong result on adjacent windows from one time record is not evidence of cross-condition generalization.
+
+The [time-series refresh protocol](REFRESH_PROTOCOL.md) specifies the data, baseline, split, and reproducibility checks required before this module can be promoted to a current graded assignment.
