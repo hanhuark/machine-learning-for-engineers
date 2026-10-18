@@ -7,7 +7,7 @@ An open, project-based AI/ML and AI-literacy curriculum for learning to formulat
 Repository scope, evidence, and reuse boundaries are also available in the
 [NED3 resource manifest](.ned3/resource-manifest-v0.1.json).
 
-**Start with the [course gateway](docs/index.md).** New or self-directed learners can begin with the browser-friendly [First 30 minutes](learning_paths/00_first_30_minutes/); students can then choose a module from the map below, and instructors can use the [adoption guide](ADOPTION_GUIDE.md) to adapt it responsibly.
+**Start with the [course gateway](docs/index.md).** New or self-directed learners can begin with the browser-friendly [First 30 minutes](learning_paths/00_first_30_minutes/); students can then choose a module from the map below. Instructors should begin with the [Instructor Quickstart](INSTRUCTOR_QUICKSTART.md), then use the [adoption guide](ADOPTION_GUIDE.md) for a focused adaptation.
 
 See [IMPLEMENTATIONS.md](IMPLEMENTATIONS.md) for the originating course and a transparent record of confirmed implementations as the curriculum is adopted elsewhere.
 
@@ -150,8 +150,10 @@ This is a request for scholarly attribution, not a condition of the [BSD 3-Claus
 
 ## For instructors and adopters
 
+- [Instructor Quickstart](INSTRUCTOR_QUICKSTART.md): course-in-a-box pathways for a single module, a 14-week course, or capstone integration.
 - [Instructor guide](INSTRUCTOR_GUIDE.md): suggested pacing, assessment design, and operating boundaries.
 - [Adoption guide](ADOPTION_GUIDE.md): how to use one or more modules in another course.
+- [LMS/Blackboard preparation checklist](teaching_resources/LMS_PREPARATION_CHECKLIST.md): convert source materials into a local course shell while retaining private assessment boundaries.
 - [Engineering AI-literacy framework](teaching_resources/ENGINEERING_AI_LITERACY_FRAMEWORK.md): outcomes, progression, module mapping, and assessment evidence.
 - [Contributing guide](CONTRIBUTING.md): how to suggest corrections or improvements.
 - [Citation metadata](CITATION.cff): preferred scholarly citation and repository metadata.

@@ -11,11 +11,11 @@ The modules are ordered by engineering task and evidence burden, not by a catalo
 | 4-5 | II. Classification | I | Image pipeline, group splits, threshold decisions | Diagnose a misclassification and confidence threshold |
 | 6 | III. PCA and clustering | I-II | Representations, reconstruction, cluster stability | Explain a principal component using representative images |
 | 7-9 | IV. Segmentation/object detection | II | Label quality, transfer learning, visual validation | Inspect and explain failed predictions |
-| 10-12 | Advanced-track selection: VII. Time-series forecasting **after refresh**, VIII. PINNs, or V. RL as a conceptual/special-topic option | Foundations plus relevant prior module | Dynamic forecasting, governing equations, or constrained sequential decisions | Present hypothesis, baseline, and limitation |
+| 10-12 | Advanced-track selection: VII. simulated thermal time series, VIII. PINNs, or V. RL as a conceptual/special-topic option | Foundations plus relevant prior module | Dynamic forecasting, governing equations, or constrained sequential decisions | Present hypothesis, baseline, and limitation |
 | 13 | IX. AI agent harnesses lab | One prior programming-based engineering assignment | Tool boundaries, skills, MCP, plugins, verification | Defend a constrained workflow and reject an unsupported agent output |
 | 14 | Capstone/project integration | At least two prior modules | Engineering decision, held-out evidence, communication | Explain a result, limitation, and next validation step |
 
-The advanced-track modules are alternatives in a typical one-semester offering. Module IX can also be used as a one- to two-week lab alongside a later project. Module VI is under development, Module VII requires a validation refresh before it is used as graded material, and Module V requires an engineering environment before it is a full applied-control release. See [CURRICULUM_ARCHITECTURE.md](CURRICULUM_ARCHITECTURE.md) for module-level decisions and the planned industrial-AI roadmap.
+The advanced-track modules are alternatives in a typical one-semester offering. Module IX can also be used as a one- to two-week lab alongside a later project. Module VI is under development. Module VII's simulated thermal-RC core is ready for graded use; its legacy boiling extension still requires validation refresh. Module V requires an engineering environment before it is a full applied-control release. See [CURRICULUM_ARCHITECTURE.md](CURRICULUM_ARCHITECTURE.md) for module-level decisions and the planned industrial-AI roadmap.
 
 ## Minimum competency standard
 

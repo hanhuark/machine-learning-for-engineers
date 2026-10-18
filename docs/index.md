@@ -20,7 +20,7 @@ An open curriculum for students and instructors who want to do more than run a m
 | Learner who is unsure which method applies | Use the [engineering AI method selector](method-selector.md), then confirm the evidence requirements. |
 | Student learning a method | Read the [course map](../COURSE_MAP.md), then select a module and complete its tutorial before attempting the assignment. |
 | Engineer bringing a problem or data set | Use the [application-studio framework](../case_studies/) to frame the decision, data rights, baseline, split rule, and validation need before choosing a model. |
-| Instructor adopting one module | Use the [adoption guide](../ADOPTION_GUIDE.md) and the [instructor guide](../INSTRUCTOR_GUIDE.md). |
+| Instructor adopting one module or a full course | Start with the [Instructor Quickstart](../INSTRUCTOR_QUICKSTART.md), then use the [adoption guide](../ADOPTION_GUIDE.md) and [instructor guide](../INSTRUCTOR_GUIDE.md). |
 | Instructor infusing AI literacy | Start with the [engineering AI-literacy framework](../teaching_resources/ENGINEERING_AI_LITERACY_FRAMEWORK.md), then adapt the assignment modes and evidence to your context. |
 | Instructor designing AI-resilient assessment | Start with the [assessment and AI policy](../teaching_resources/ASSESSMENT_AND_AI_POLICY.md) and shared [engineering-ML rubric](../teaching_resources/ENGINEERING_ML_RUBRIC.md). |
 | Reader using the proposed book companion | Start with the [book companion chapter map](../book_companion/CHAPTER_MAP.md). |
