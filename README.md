@@ -86,6 +86,14 @@ cases without copying source archives into this repository. Its status labels
 distinguish verified public sources from cases that still require release
 reconciliation, rights review, a runnable lesson, or instructor validation.
 
+## Book companion
+
+The [book companion](book_companion/) maps the proposed *Machine Learning for
+Mechanical Engineering* book chapters to canonical course modules, reusable
+engineering cases, and chapter-level reproducibility requirements. It keeps
+the semester course compact while providing a maintained path for deeper
+method, case-study, and AI-tool material.
+
 Do not upload student records, unpublished data, confidential sponsor data, restricted datasets, or material without redistribution permission.
 
 ### Repository maintenance check
