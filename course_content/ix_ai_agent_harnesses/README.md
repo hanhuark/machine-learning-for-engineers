@@ -6,6 +6,10 @@ An AI model is not an engineering workflow. An **agent harness** is the surround
 
 The goal is not to train students to hand an assignment to an agent. The goal is to help them decide what an agent may access or change, test its output against physics and data, and remain accountable for the resulting engineering claim.
 
+**Five-minute demo:** Run [`engineering_agent.py`](../short_code_demos/engineering_agent.py) to verify an idealized plane-wall conduction calculation with limiting-case checks. A passing script verifies only the stated model, not a complete thermal assembly.
+
+**Detailed foundations:** Read [bounded agent-workflow foundations](FOUNDATIONS.md) for the physical contract, harness boundary, worked conduction calculation, acceptance tests, and failure checks.
+
 ## Learning objectives
 
 After this module, a student should be able to:

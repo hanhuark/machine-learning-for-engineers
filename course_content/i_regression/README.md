@@ -2,6 +2,8 @@
 
 Regression is a fundamental machine learning task. This module uses Razorback football win margin to introduce model comparison, data availability, residual analysis, and the distinction between pregame forecasting and postgame explanation. The legacy Homework 1 PDF/DOCX and tutorials remain available; use the [current AI-resilient assignment specification](ASSIGNMENT_AI_RESILIENT.md) for future offerings, and verify external data/tutorial access before assigning them. <br><br>
 
+**Five-minute demo:** Run [`regression.py`](../short_code_demos/regression.py) to fit a pressure-drop line and report held-out MAE in kPa. The equation and its metric are editable TeX, rendered on GitHub and the companion website. <br><br>
+
 **Tutorial**:<br> [![colab1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/100jLm4_UesIVNyjq-mCEIVxE28kXYqX6?usp=sharing) 
 <br> 
 

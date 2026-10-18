@@ -4,9 +4,9 @@
 
 A teammate asks an AI agent to review a Python calculation for one-dimensional steady conduction through a plane wall. The intended model is
 
-\[
+$$
 R_{cond} = \frac{L}{kA}, \qquad \dot{Q} = \frac{T_{hot}-T_{cold}}{R_{cond}}.
-\]
+$$
 
 The task is useful because it has a simple independent answer, explicit SI units, and clear limiting cases. It is not a claim about a complete thermal system.
 
@@ -60,9 +60,9 @@ Treat a confident unsupported answer as a failure case, not a partial success.
 
 Use the instructor-provided values or choose public-safe values. For example, with \(L=0.010\) m, \(k=200\) W/(m K), and \(A=0.020\) m²,
 
-\[
+$$
 R_{cond}=0.0025\ \mathrm{K/W}.
-\]
+$$
 
 For a 10 K temperature difference, \(\dot Q=4000\) W under the stated idealized model. Explain why this result may be physically unrealistic for a particular assembly even though the arithmetic is correct: convection, spreading, contact resistance, geometry, and property variation are excluded.
 

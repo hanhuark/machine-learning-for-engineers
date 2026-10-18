@@ -2,6 +2,10 @@
 
 > **Status: under development.** This folder separates generative modeling from reinforcement learning, but it is not yet a complete, assignable module.
 
+**Five-minute demo:** Run [`generative_design_screen.py`](../short_code_demos/generative_design_screen.py) to screen reported design candidates against mass and temperature constraints. This is deliberately a feasibility check, not a generative model or a validated inverse-design workflow.
+
+**Detailed foundations:** Read [generative-model and inverse-design foundations](FOUNDATIONS.md) for the reconstruction, generation, and constrained-design formulations; an evidence ladder; and failure checks. This does not change the module's under-development status.
+
 ## Engineering question
 
 When can a generative model create, reconstruct, enhance, augment, or propose engineering designs without corrupting the physical interpretation, uncertainty, manufacturability, or decision process?
@@ -12,11 +16,11 @@ The module will introduce generative adversarial networks (GANs), autoencoders, 
 
 For GANs, the core adversarial objective is:
 
-\[
+$$
 L_D = \operatorname{CE}(1, D(x_{\mathrm{real}})) + \operatorname{CE}(0, D(x_{\mathrm{fake}})),
 \qquad
 L_G = \operatorname{CE}(1, D(x_{\mathrm{fake}})).
-\]
+$$
 
 These losses alone do not establish physical validity, distributional coverage, or usefulness for an engineering task.
 

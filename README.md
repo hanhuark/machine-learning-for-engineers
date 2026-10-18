@@ -13,6 +13,8 @@ See [IMPLEMENTATIONS.md](IMPLEMENTATIONS.md) for the originating course and a tr
 
 The course uses Python tutorials as the primary reproducible pathway. MATLAB tutorials remain available where supplied, including a direct [MATLAB Online launch](https://matlab.mathworks.com/open/github/v1?repo=hanhuark/machine-learning-for-engineers), but new course development should not assume students have access to proprietary software.
 
+For an inspectable first run before a full tutorial, use the [short-code demonstrations](course_content/short_code_demos/). Each is designed around one method, one engineering check, and one modification prompt. The [math and short-code authoring guide](docs/MATH_AND_CODE_GUIDE.md) defines the editable TeX convention used in Markdown and on the GitHub Pages site.
+
 ## What students learn
 
 - translate an engineering question into inputs, labels, assumptions, and appropriate metrics;

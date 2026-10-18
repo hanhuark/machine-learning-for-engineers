@@ -1,6 +1,8 @@
 ## Topic 3 - Dimensionality Reduction and Clustering
 This module examines low-dimensional image representations and cluster stability using boiling images. The legacy Homework 3 PDF/DOCX and tutorials remain available; use the [current AI-resilient assignment specification](ASSIGNMENT_AI_RESILIENT.md) for future offerings, and verify external data/tutorial access before assigning them.<br/><br/>
 
+**Five-minute demo:** Run [`pca.py`](../short_code_demos/pca.py) to reduce two correlated engineering signals and inspect reconstruction. Retained variance is not, by itself, proof of a physical mechanism.<br/><br/>
+
 Perform dimensionality reduction and clustering analysis of the same dataset used in HW-2.<br/>
 (a) Run single value decomposition (SVD) or principal component analysis (PCA) of the images and plot the percentage explained variance vs. the number of principal components (PC).<br/> (b) Pick a representative image, run PCA and plot the reconstructed images using a different number of PCs (e.g. using PC1, PCs 1-2, PCs, 1-10, PCs 1-20, etc.).<br/> (c) Calculate the error of the reconstructed images relative to the original image and plot the error as a function of the number of PCs.<br/> (d) Run a clustering analysis of the boiling images using the PCs (the number of PCs to use is up to your choice) and evaluate the results of clustering.<br/>
 

@@ -4,6 +4,10 @@ Physics-informed neural networks (PINNs) combine neural-network approximation wi
 
 The purpose is not to present PINNs as replacements for analytical or numerical heat-transfer methods. The analytical solution and a finite-difference solution are established first and are used to verify the PINN. Students then use sparse synthetic temperature observations to estimate an unknown thermal diffusivity and investigate conditions under which a PINN can give an inaccurate solution despite a decreasing training loss.
 
+**Five-minute demo:** Run [`heat_equation.py`](../short_code_demos/heat_equation.py) to calculate the Fourier number and verify the analytical solution's initial and boundary conditions before training a PINN.
+
+**Detailed foundations:** Read [PINN heat-conduction foundations](FOUNDATIONS.md) for the Fourier number, finite-difference stability limit, residual formulation, worked baseline, and failure checks.
+
 ## Learning objectives
 
 After completing this module, students should be able to:
@@ -21,29 +25,29 @@ After completing this module, students should be able to:
 
 The baseline system is a homogeneous, one-dimensional rod of length `L` with constant thermal diffusivity `alpha`. There is no internal heat generation, convection, radiation, or contact resistance. The temperature variable is the excess temperature above the fixed boundary temperature:
 
-```math
+$$
 \frac{\partial T}{\partial t}=\alpha\frac{\partial^2T}{\partial x^2},
 \qquad 0<x<L,\quad t>0,
-```
+$$
 
 with
 
-```math
+$$
 T(0,t)=T(L,t)=0,
-```
+$$
 
 and
 
-```math
+$$
 T(x,0)=T_0\sin\left(\frac{\pi x}{L}\right).
-```
+$$
 
 The analytical solution is
 
-```math
+$$
 T(x,t)=T_0\exp\left(-\frac{\pi^2\alpha t}{L^2}\right)
 \sin\left(\frac{\pi x}{L}\right).
-```
+$$
 
 The baseline parameters are:
 
@@ -60,19 +64,19 @@ Because the dependent variable is an excess temperature, `T = 0 K` in the equati
 
 The network receives `(x, t)` and returns `T_theta(x, t)`. Automatic differentiation supplies `T_t` and `T_xx`. The physics residual is
 
-```math
+$$
 r_\theta=\frac{\partial T_\theta}{\partial t}
 -\alpha\frac{\partial^2T_\theta}{\partial x^2}.
-```
+$$
 
 Training minimizes
 
-```math
+$$
 \mathcal{L}=w_f\mathcal{L}_{PDE}
 +w_{IC}\mathcal{L}_{IC}
 +w_{BC}\mathcal{L}_{BC}
 +w_d\mathcal{L}_{data},
-```
+$$
 
 where the observation term is used only in the inverse problem. A low value of this composite objective is a convergence diagnostic, not independent validation.
 

@@ -1,5 +1,9 @@
 # V. Reinforcement Learning for Engineering Control
 
+**Five-minute demo:** Run [`reinforcement_learning.py`](../short_code_demos/reinforcement_learning.py) and change the collision penalty. The reward is a design choice that must encode the consequences and constraints of the physical task.
+
+**Detailed foundations:** Read [bounded engineering-control foundations](FOUNDATIONS.md) for state/action definitions, Q-learning and return equations, a representative update, baseline comparison, and failure checks.
+
 ## Status and intended use
 
 This module introduces reinforcement learning (RL) as a framework for sequential decision-making. It is a focused learning module, not a claim that RL is appropriate for every engineering-control problem. The current material uses tabular Q-learning in a simple environment to establish the agent, state, action, reward, transition, and policy concepts before students work with an engineering-oriented environment.

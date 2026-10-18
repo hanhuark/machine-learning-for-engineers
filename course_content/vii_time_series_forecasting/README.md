@@ -2,6 +2,10 @@
 
 > **Status: validation refresh in progress.** The legacy PCA–LSTM/sequence-to-sequence materials are preserved below, but the tutorial must be refreshed before use as a current graded assignment.
 
+**Five-minute demo:** Run [`time_series.py`](../short_code_demos/time_series.py) to make a chronological holdout and inspect a persistence baseline. The illustrative script does not validate the legacy forecasting tutorial for graded use.
+
+**Detailed foundations:** Read [forecasting and prognostics foundations](FOUNDATIONS.md) for the time base, sequence-window equation, baseline metric, split design, and failure checks. This does not change the module's validation-refresh status.
+
 ## Engineering question
 
 Given the history of a physically meaningful observable, such as vapor fraction, what can be forecast at a stated horizon—and does that forecast remain useful when the operating condition changes?

@@ -16,6 +16,7 @@ An open curriculum for students and instructors who want to do more than run a m
 | I am a… | Start here |
 | --- | --- |
 | Self-directed learner or beginner | Complete the browser-friendly [First 30 minutes](../learning_paths/00_first_30_minutes/), then use the [learning-path checklist](../learning_paths/). |
+| Learner who wants a five-minute runnable example | Choose a [short code demonstration](../course_content/short_code_demos/) before opening a full tutorial. |
 | Student learning a method | Read the [course map](../COURSE_MAP.md), then select a module and complete its tutorial before attempting the assignment. |
 | Engineer bringing a problem or data set | Use the [application-studio framework](../case_studies/) to frame the decision, data rights, baseline, split rule, and validation need before choosing a model. |
 | Instructor adopting one module | Use the [adoption guide](../ADOPTION_GUIDE.md) and the [instructor guide](../INSTRUCTOR_GUIDE.md). |
@@ -50,6 +51,8 @@ Before selecting a module, check [module status and learner expectations](../MOD
 7. [Time-series forecasting and prognostics](../course_content/vii_time_series_forecasting/): boiling dynamics and sequence-to-sequence forecasting (**validation refresh required**).
 8. [Physics-informed neural networks](../course_content/viii_physics_informed_neural_networks/): transient heat conduction, inverse problems, and model-form error.
 9. [AI agent harnesses](../course_content/ix_ai_agent_harnesses/): bounded AI-assisted engineering workflows, skills, MCP, plugins, and independent verification.
+
+All modules now have an accompanying [short-code demonstration](../course_content/short_code_demos/) that exposes one concept, physical check, and modification prompt. The [math and short-code authoring guide](MATH_AND_CODE_GUIDE.md) documents the equation syntax that renders both on GitHub and this website.
 
 Read the [curriculum architecture and roadmap](../CURRICULUM_ARCHITECTURE.md) for current module readiness, recommended sequencing, and planned industrial-AI extensions.
 

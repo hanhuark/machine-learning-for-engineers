@@ -1,5 +1,9 @@
 ## Topic 4 - Segmentation and Object Detection:
 Within engineering the use of segmentation and object detection have many applications. For example, segmentation can be used to obtain the approximate vapor fraction from boiling images. The legacy Homework 4 PDF/DOCX remains available; use the [current AI-resilient assignment specification](ASSIGNMENT_AI_RESILIENT.md) for future offerings. The public tutorial/data links require instructor verification before graded use.
+
+**Five-minute demo:** Run [`segmentation.py`](../short_code_demos/segmentation.py) to compute IoU and Dice overlap for a binary bubble mask. Explain why a background-heavy image can have high pixel accuracy while the object measurement is poor.
+
+**Detailed foundations:** Read [segmentation and object-detection foundations](FOUNDATIONS.md) for the measurement definition, editable equations, worked mask example, validation workflow, and failure checks.
 For semantic segmentation, you will use boiling images and corresponding masks made using labelme and a popular model UNET (which is provided here so you can just copy and put directly into your code): 
 
 ![od](./static/segvid.gif)

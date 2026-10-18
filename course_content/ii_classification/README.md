@@ -1,6 +1,8 @@
 ## Topic 2 - Image Classification
 Classification has several applications, including automatic sorting. This module uses nuts and bolts to teach image classification as an engineering deployment problem: students must consider data splits, robustness, confidence, and failure consequences, not only training accuracy. The legacy Homework 2 PDF/DOCX and tutorials remain available; use the [current AI-resilient assignment specification](ASSIGNMENT_AI_RESILIENT.md) for future offerings, and verify external data/tutorial access before assigning them.
 
+**Five-minute demo:** Run [`classification.py`](../short_code_demos/classification.py) and change the decision threshold. Compare false negatives, false positives, precision, recall, and accuracy before deciding which error matters for a sorting task.
+
 **Tutorial**:<br>[![colab1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/11Tnvekzz4KN7ytTOJCA9HHvrKh7kVJ03?usp=sharing)
 <br> 
 
