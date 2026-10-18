@@ -131,6 +131,18 @@ def mean_absolute_error(truth: np.ndarray, prediction: np.ndarray) -> float:
     return float(np.mean(np.abs(np.asarray(truth) - np.asarray(prediction))))
 
 
+def evaluate_forecast_run(run: pd.DataFrame, coefficients: np.ndarray, horizon_steps: int) -> tuple[float, float]:
+    """Return persistence and recursive ARX MAE for one independent run."""
+    if horizon_steps >= len(run):
+        raise ValueError("forecast horizon must be shorter than the available run")
+    truth = run["temperature_C"].to_numpy()[1 : horizon_steps + 1]
+    persistence = np.full(horizon_steps, run["temperature_C"].iloc[0], dtype=float)
+    linear = recursive_linear_forecast(
+        run["temperature_C"].iloc[0], run["power_W"].to_numpy()[:horizon_steps], coefficients
+    )
+    return mean_absolute_error(truth, persistence), mean_absolute_error(truth, linear)
+
+
 def main() -> None:
     base = ThermalRCConfig()
     train_config = base
@@ -145,16 +157,15 @@ def main() -> None:
     )
     coefficients = fit_one_step_linear_model(train)
     horizon_steps = 100
-    truth = test["temperature_C"].to_numpy()[1 : horizon_steps + 1]
-    persistence = np.full(horizon_steps, test["temperature_C"].iloc[0], dtype=float)
-    linear = recursive_linear_forecast(
-        test["temperature_C"].iloc[0], test["power_W"].to_numpy()[:horizon_steps], coefficients
-    )
+    validation_persistence_mae, validation_arx_mae = evaluate_forecast_run(validation, coefficients, horizon_steps)
+    test_persistence_mae, test_arx_mae = evaluate_forecast_run(test, coefficients, horizon_steps)
     print("Evidence class: simulated teaching fixture")
-    print("Independent split: full test run with shifted R_th and ambient temperature")
+    print("Independent split: full validation run with shifted R_th; full test run with shifted R_th and ambient temperature")
     print(f"Forecast horizon: {horizon_steps} samples = {horizon_steps * base.dt_s:.1f} s")
-    print(f"Persistence MAE: {mean_absolute_error(truth, persistence):.3f} degC")
-    print(f"Training-only linear ARX MAE: {mean_absolute_error(truth, linear):.3f} degC")
+    print(f"Validation persistence MAE: {validation_persistence_mae:.3f} degC")
+    print(f"Validation training-only linear ARX MAE: {validation_arx_mae:.3f} degC")
+    print(f"Test persistence MAE: {test_persistence_mae:.3f} degC")
+    print(f"Test training-only linear ARX MAE: {test_arx_mae:.3f} degC")
     print("Do not interpret the linear model as validated for an unmodeled physical system.")
 
     output_directory = Path(__file__).resolve().parent / "generated"

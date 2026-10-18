@@ -14,6 +14,7 @@ sys.path.insert(0, str(TUTORIAL_DIRECTORY))
 from thermal_rc_forecasting import (  # noqa: E402
     ThermalRCConfig,
     chronological_run_split,
+    evaluate_forecast_run,
     make_supervised_windows,
     simulate_thermal_run,
 )
@@ -53,6 +54,13 @@ class ThermalRCFixtureTests(unittest.TestCase):
         self.assertEqual(set(train["run_id"]), {"train"})
         self.assertEqual(set(validation["run_id"]), {"validation"})
         self.assertEqual(set(test["run_id"]), {"test"})
+
+    def test_forecast_evaluation_rejects_a_horizon_outside_the_run(self):
+        config = ThermalRCConfig(duration_s=1.0)
+        run = simulate_thermal_run(config, np.full(config.sample_count, 20.0), run_id="short")
+
+        with self.assertRaises(ValueError):
+            evaluate_forecast_run(run, np.array([0.0, 1.0, 0.0]), horizon_steps=len(run))
 
 
 if __name__ == "__main__":
