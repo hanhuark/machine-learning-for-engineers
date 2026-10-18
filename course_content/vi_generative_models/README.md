@@ -17,12 +17,22 @@ The module will introduce generative adversarial networks (GANs), autoencoders, 
 For GANs, the core adversarial objective is:
 
 $$
-L_D = \operatorname{CE}(1, D(x_{\mathrm{real}})) + \operatorname{CE}(0, D(x_{\mathrm{fake}})),
+L_D = \mathrm{CE}(1, D(x_{\mathrm{real}})) + \mathrm{CE}(0, D(x_{\mathrm{fake}})),
 \qquad
-L_G = \operatorname{CE}(1, D(x_{\mathrm{fake}})).
+L_G = \mathrm{CE}(1, D(x_{\mathrm{fake}})).
 $$
 
 These losses alone do not establish physical validity, distributional coverage, or usefulness for an engineering task.
+
+## Visual guide
+
+![Conceptual comparison of reconstruction, generation, and inverse design](assets/generative_task_map.svg)
+
+*Figure 1. Conceptual task map. The arrows show information flow, not a measured physical process. The task must be named before choosing an evaluation method.*
+
+![Conceptual evidence and constraint pathway for generated engineering content](assets/generative_evidence_pipeline.svg)
+
+*Figure 2. Conceptual evidence pathway. A generated output remains a candidate until provenance, independent evaluation, and relevant physical/design constraints support a bounded claim.*
 
 ## Requirements before classroom assignment
 
