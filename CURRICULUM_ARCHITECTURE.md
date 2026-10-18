@@ -14,7 +14,7 @@ This review evaluates the current modules as teaching materials for engineering 
 | IV. Segmentation and object detection | Keep separate from image classification | Current assignment added; local reproducible tutorial/data package remains a priority | Spatial/grouped split, mask/box metrics, visual error audit, measurement uncertainty |
 | V. Reinforcement learning | Keep separate; do not merge with sequence modeling | Conceptual foundation only until a constrained engineering environment is released | Baseline controller, constraint audit, perturbed evaluation |
 | VI. Generative models and inverse engineering design | Broaden the framing; do not assign yet | Under development | Data rights, non-generative baseline, held-out task metric, synthetic-data failure audit |
-| VII. Time-series forecasting and prognostics | Retain as a distinct dynamics module | Validation refresh required before grading | Chronological/grouped split, persistence baseline, error by horizon, shifted-condition test |
+| VII. Time-series forecasting and prognostics | Retain as a distinct dynamics module | Simulated thermal-RC core is ready; legacy boiling extension needs refresh | Chronological/grouped split, persistence baseline, error by horizon, shifted-condition test |
 | VIII. PINNs | Keep after supervised/core ML | Current controlled teaching module | Analytical and numerical baselines, inverse uncertainty, model-form failure analysis |
 | IX. AI agent harnesses | Treat as a cross-cutting thread plus later lab | Current design/verification module | Access boundary, AI-use trace, independent check, individual defense |
 
@@ -27,7 +27,7 @@ The foundational order does **not** change: it moves from simple supervised pred
 | Orientation | Foundations + short IX orientation | Units, data provenance, splits, baseline-first reasoning, AI-use boundary |
 | Core prediction | I. Regression; II. Classification | Targets, metrics, leakage, uncertainty, deployment consequences |
 | Representation and measurement | III. Dimensionality reduction and clustering; IV. Segmentation and object detection | Structure discovery, labels, spatial outputs, visual measurement and failure audit |
-| Advanced selection | VII. Time series **after refresh**; VIII. PINNs; V. RL as a conceptual/special-topic option | Dynamic systems, governing equations, and constrained decision-making |
+| Advanced selection | VII. Time series (simulated thermal-RC core); VIII. PINNs; V. RL as a conceptual/special-topic option | Dynamic systems, governing equations, and constrained decision-making |
 | Capstone extensions | VI. Generative/inverse design **after release**; IX harness lab; final project | Design/augmentation credibility, controlled agent workflows, engineering decisions |
 
 Do not make every advanced module compulsory in a one-semester offering. A defensible default is I–IV, VIII, and the IX orientation/lab, with one validated advanced option selected for the available time.

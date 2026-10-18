@@ -1,10 +1,18 @@
 # Foundations: time-series forecasting and prognostics
 
-Forecasting uses the order of observations as information. This guide explains the baseline forecasting problem; it does not validate the legacy sequence-to-sequence tutorial for graded use.
+Forecasting uses the order of observations as information. The current teaching route uses a simulated lumped thermal system; the historical boiling sequence material remains an extension that is not yet validated for graded use.
 
 ## 1. Define the signal and clock
 
-Let $y_k$ be a physical observable sampled at time $t_k$, with sampling interval $\Delta t=t_{k+1}-t_k$. In the legacy boiling record, vapor fraction is dimensionless and the nominal sampling frequency is 3,000 Hz, so $\Delta t\approx0.33$ ms. State whether timestamps are measured or assumed, whether samples are equally spaced, and how missing frames are handled.
+Let $y_k$ be a physical observable sampled at time $t_k$, with sampling interval $\Delta t=t_{k+1}-t_k$. In the current thermal-RC fixture, $y_k=T_k$ is temperature in $^\circ$C, the known input is heat load $P_k$ in W, and $\Delta t=0.1$ s. State whether timestamps are measured or assumed, whether samples are equally spaced, and how missing samples are handled.
+
+The fixture integrates the first-order energy balance
+
+$$
+C\frac{dT}{dt}=P-\frac{T-T_a}{R},
+$$
+
+where $C$ is thermal capacitance (J/K), $R$ is thermal resistance (K/W), and $T_a$ is ambient temperature ($^\circ$C). It is a transparent simulation for teaching split logic and baselines—not a calibrated model of a particular cold plate, converter, or semiconductor device.
 
 Using a history window of $w$ samples, a direct multi-step forecasting task is
 
@@ -35,15 +43,15 @@ $$
 \left|y_{i,h}-\hat{y}_{i,h}\right|.
 $$
 
-For vapor fraction, MAE is dimensionless. A model must beat a relevant baseline at the stated horizon and condition before its added complexity is useful.
+For the thermal-RC fixture, MAE has unit $^\circ$C (equivalently K for a temperature difference). A model must beat a relevant baseline at the stated horizon and condition before its added complexity is useful.
 
 ## 3. Worked representative case
 
-Run the chronological-split example:
+Run the simulated thermal-RC example:
 
-<pre><code>python ../short_code_demos/time_series.py</code></pre>
+<pre><code>python tutorials/thermal_rc_forecasting.py</code></pre>
 
-The code holds out the last three values and forecasts each with the final training value. This protects time ordering; it does not validate a real deployment. Change the horizon, then explain why error normally needs to be reported separately by forecast lead time.
+The code holds out an entire run with both a changed thermal resistance and ambient temperature. It compares persistence with a linear ARX model fit on the nominal run only. This protects time ordering and makes transfer limitations visible; it does not validate a real deployment. Change the horizon, then explain why error normally needs to be reported separately by forecast lead time.
 
 ## 4. Split design
 

@@ -1,16 +1,18 @@
-# VII. Time-Series Forecasting and Prognostics of Boiling Dynamics
+# VII. Time-Series Forecasting and Prognostics
 
-> **Status: validation refresh in progress.** The legacy PCA–LSTM/sequence-to-sequence materials are preserved below, but the tutorial must be refreshed before use as a current graded assignment.
+> **Status: ready to assign for the simulated thermal-RC core.** The legacy PCA–LSTM/boiling materials are preserved as a reference extension and must be refreshed before graded use.
 
-**Five-minute demo:** Run [`time_series.py`](../short_code_demos/time_series.py) to make a chronological holdout and inspect a persistence baseline. The illustrative script does not validate the legacy forecasting tutorial for graded use.
+**Five-minute demo:** Run [`thermal_rc_forecasting.py`](tutorials/thermal_rc_forecasting.py). It simulates a lumped thermal system, holds out an entire shifted condition, and compares persistence with a training-only linear autoregressive-with-exogenous-input (ARX) baseline.
 
-**Detailed foundations:** Read [forecasting and prognostics foundations](FOUNDATIONS.md) for the time base, sequence-window equation, baseline metric, split design, and failure checks. This does not change the module's validation-refresh status.
+**Current assignment:** Complete the [AI-resilient thermal-forecasting assignment](ASSIGNMENT_AI_RESILIENT.md) and consult the [simulated-data card](data_card_thermal_rc.md). The fixture is illustrative simulation, not experimental evidence or a validated digital twin.
+
+**Detailed foundations:** Read [forecasting and prognostics foundations](FOUNDATIONS.md) for the time base, sequence-window equation, baseline metric, split design, and failure checks.
 
 ## Engineering question
 
-Given the history of a physically meaningful observable, such as vapor fraction, what can be forecast at a stated horizon—and does that forecast remain useful when the operating condition changes?
+Given the history of a physically meaningful observable and known inputs, what can be forecast at a stated horizon—and does that forecast remain useful when the operating condition changes?
 
-The supplied legacy data record contains vapor fraction (dimensionless) as a function of time (ms) from boiling-image sequences sampled at 3,000 Hz (nominal timestep 0.33 ms). The learner's task is a direct multi-step forecast, with sequence-to-sequence RNN/GRU/LSTM architectures as candidate methods.
+The current fixture predicts temperature $T$ in degrees Celsius from a known heat-load command $P$ in watts. It uses the simulated balance $C\,dT/dt=P-(T-T_a)/R$, sampled every 0.1 s. The held-out run changes thermal resistance and ambient temperature, so good performance on adjacent samples alone cannot be mistaken for transfer across conditions.
 
 ## Why this is a separate module
 
@@ -18,19 +20,19 @@ Forecasting and prognostics are not merely another neural-network architecture. 
 
 ## Current materials
 
-The [tutorials](tutorials/) folder contains the historical Python, notebook, MATLAB, and vapor-fraction materials. They are reference materials, not validated current solutions.
+The [tutorials](tutorials/) folder contains the runnable [thermal-RC forecasting script](tutorials/thermal_rc_forecasting.py), plus historical Python, notebook, MATLAB, and vapor-fraction files. The latter are reference materials, not validated current solutions.
 
-## Required refresh before assessment use
+## Current assessment requirements
 
-1. Use chronological, non-overlapping train/validation/test blocks. Where possible, hold out complete boiling runs or operating conditions.
+1. Use the supplied train, validation, and condition-held-out test runs; do not pool or randomly split their windows.
 2. Fit any scaling/normalization using training data only.
-3. Compare persistence and simple autoregressive baselines with RNN/GRU/LSTM models.
+3. Compare persistence and the simple ARX baseline before trying a higher-capacity model.
 4. Report held-out horizon-dependent MAE/RMSE and forecast plots—not training loss as evidence of performance.
-5. Test at least one shifted condition, such as another heat flux or run, and diagnose failure.
+5. Diagnose the shifted resistance/ambient test condition and state what the simulation cannot establish about a physical device.
 6. Require students to state the observable, units, sampling interval, input window, forecast horizon, and intended decision use.
 
 ## Assessment expectation
 
 Students should submit a split plan, baseline forecast, model comparison, held-out forecast plot, error-versus-horizon analysis, and a short defense. A strong result on adjacent windows from one time record is not evidence of cross-condition generalization.
 
-The [time-series refresh protocol](REFRESH_PROTOCOL.md) specifies the data, baseline, split, and reproducibility checks required before this module can be promoted to a current graded assignment.
+The [time-series refresh protocol](REFRESH_PROTOCOL.md) still applies to the legacy boiling extension and any replacement measured-data case.

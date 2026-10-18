@@ -52,7 +52,7 @@ Before interpreting any model output, use the shared [engineering evidence check
 4. [Segmentation and object detection](../course_content/iv_segmentation_and_object_detection/): visual labels, transfer learning, and error audits.
 5. [Reinforcement learning](../course_content/v_reinforcement_learning/): bounded sequential decisions and policy evaluation.
 6. [Generative models and inverse engineering design](../course_content/vi_generative_models/): engineering synthetic data, design candidates, and credibility checks (**under development**).
-7. [Time-series forecasting and prognostics](../course_content/vii_time_series_forecasting/): boiling dynamics and sequence-to-sequence forecasting (**validation refresh required**).
+7. [Time-series forecasting and prognostics](../course_content/vii_time_series_forecasting/): simulated thermal-state forecasting with known heat-load inputs; the boiling sequence extension remains under validation refresh.
 8. [Physics-informed neural networks](../course_content/viii_physics_informed_neural_networks/): transient heat conduction, inverse problems, and model-form error.
 9. [AI agent harnesses](../course_content/ix_ai_agent_harnesses/): bounded AI-assisted engineering workflows, skills, MCP, plugins, and independent verification.
 

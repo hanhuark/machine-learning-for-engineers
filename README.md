@@ -41,7 +41,7 @@ Students learn to use AI as accountable engineering practitioners: decide when a
 | [IV. Segmentation and object detection](course_content/iv_segmentation_and_object_detection/) | Identify bubbles and objects; U-Net, YOLO, transfer learning | Held-out condition performance, visual error audit |
 | [V. Reinforcement learning](course_content/v_reinforcement_learning/) | Make bounded sequential decisions; Q-learning and policy evaluation | Baseline policy, constraint audit, perturbed-condition evaluation |
 | [VI. Generative models and inverse engineering design](course_content/vi_generative_models/) | Evaluate synthetic/reconstructed data and design candidates under physical constraints | **Under development**; not yet a current assignment |
-| [VII. Time-series forecasting and prognostics](course_content/vii_time_series_forecasting/) | Forecast boiling dynamics; sequence-to-sequence RNN/GRU/LSTM candidates | **Validation refresh required** before graded use |
+| [VII. Time-series forecasting and prognostics](course_content/vii_time_series_forecasting/) | Forecast a simulated thermal state with known heat-load inputs; optional legacy boiling extension | **Ready to assign:** simulated thermal-RC core; legacy extension needs validation refresh |
 | [VIII. Physics-informed neural networks](course_content/viii_physics_informed_neural_networks/) | Solve and invert transient heat conduction; PINNs | Analytical/numerical verification, inverse estimate, failure audit |
 | [IX. AI agent harnesses](course_content/ix_ai_agent_harnesses/) | Constrain and verify AI-assisted engineering workflows; skills, MCP, and plugins | Harness specification, independent verification, failure audit, individual defense |
 
