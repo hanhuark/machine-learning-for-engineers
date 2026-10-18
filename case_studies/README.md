@@ -29,6 +29,7 @@ studio has completed its release checks.
 | [BoilingBench CV](ned3_boilingbench_cv/) | Vision, segmentation, domain shift | Public/local release records need reconciliation before a course download is released. |
 | [Multimodal boiling signals](ned3_boiling_multimodal_signals/) | Features, time series, multimodal reasoning | Track-specific rights audit and a lightweight feature table are required. |
 | [Flow-boiling evidence audit](ned3_flow_boiling_evidence_audit/) | Segmentation critique, time-base audit, AI verification | Public source; designed first as an evidence-quality exercise, not a general benchmark. |
+| [Power-electronics thermal digital-twin studio](power_electronics_thermal_digital_twin/) | Time series, regression, monitoring, hybrid modeling | **Design stage:** a simulated thermal-RC core is available through Module VII; a device-data release needs collaborator and rights review. |
 
 See the [course-data registry](../course_data/) for canonical source links,
 licenses, access boundaries, and status labels.
