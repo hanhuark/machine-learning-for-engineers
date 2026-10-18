@@ -15,6 +15,8 @@ The course uses Python tutorials as the primary reproducible pathway. MATLAB tut
 
 For an inspectable first run before a full tutorial, use the [short-code demonstrations](course_content/short_code_demos/). Each is designed around one method, one engineering check, and one modification prompt. The [math and short-code authoring guide](docs/MATH_AND_CODE_GUIDE.md) defines the editable TeX convention used in Markdown and on the GitHub Pages site.
 
+If you are unsure which approach fits a problem, begin with the [engineering AI method selector](docs/method-selector.md), then use the [engineering evidence checklist](docs/engineering-evidence-checklist.md) before interpreting a result. These pages prioritize physical variables, units, baselines, independent evaluation, and failure boundaries over algorithm novelty.
+
 ## What students learn
 
 - translate an engineering question into inputs, labels, assumptions, and appropriate metrics;
@@ -95,6 +97,12 @@ Mechanical Engineering* book chapters to canonical course modules, reusable
 engineering cases, and chapter-level reproducibility requirements. It keeps
 the semester course compact while providing a maintained path for deeper
 method, case-study, and AI-tool material.
+
+## References and text-first dissemination
+
+The [annotated reference library](references/) records the pedagogical, technical, AI-literacy, physical-AI, and open-course sources that guide development. It distinguishes open, library, local-copy, and contributor-controlled resources so that a citation is never mistaken for a redistribution right.
+
+The public teaching strategy is deliberately text-first: concise written explanations, reproducible demonstrations, GitHub Pages guides, case-study releases, LinkedIn posts that point to durable artifacts, and citable papers. It does not depend on lecture recordings. See the [text-first dissemination strategy](docs/text-first-dissemination.md).
 
 ## Engineering AI platform development
 
