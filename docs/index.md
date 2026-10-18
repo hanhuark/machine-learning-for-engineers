@@ -22,6 +22,7 @@ An open curriculum for students and instructors who want to do more than run a m
 | Instructor infusing AI literacy | Start with the [engineering AI-literacy framework](../teaching_resources/ENGINEERING_AI_LITERACY_FRAMEWORK.md), then adapt the assignment modes and evidence to your context. |
 | Instructor designing AI-resilient assessment | Start with the [assessment and AI policy](../teaching_resources/ASSESSMENT_AND_AI_POLICY.md) and shared [engineering-ML rubric](../teaching_resources/ENGINEERING_ML_RUBRIC.md). |
 | Reader using the proposed book companion | Start with the [book companion chapter map](../book_companion/CHAPTER_MAP.md). |
+| Engineer or instructor building AI-enabled engineering practice | Read the [engineering AI platform roadmap](../ENGINEERING_AI_PLATFORM_ROADMAP.md), then choose the [engineering core](../engineering_core/), [agentic workflows](../engineering_workflows/), or [hardware/deployment pathway](../hardware_and_deployment/). |
 | Contributor | Read the [contributing guide](../CONTRIBUTING.md), especially the data-rights and student-information boundaries. |
 
 Confirmed course implementations and adaptations are listed in [IMPLEMENTATIONS.md](../IMPLEMENTATIONS.md).

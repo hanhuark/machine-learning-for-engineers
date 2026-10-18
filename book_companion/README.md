@@ -1,11 +1,12 @@
 # Book companion
 
-This directory organizes the repository as a maintained companion to the
-proposed book *Machine Learning for Mechanical Engineering: Python-Based
-Data-Driven Modeling and Engineering Applications*. It does not replace the
-one-semester course sequence. The course remains a compact learning pathway;
-the companion maps reusable tutorials, cases, exercises, and verification
-standards to the book chapters.
+This directory is a maintained, downstream companion to the proposed book
+*Machine Learning for Mechanical Engineering: Python-Based Data-Driven Modeling
+and Engineering Applications*. It does not determine the repository's
+architecture or replace the one-semester course sequence. The platform first
+develops and verifies reusable engineering capabilities; the companion maps
+stable tutorials, cases, exercises, and verification standards to book
+chapters.
 
 Start with the [chapter map](CHAPTER_MAP.md). It identifies the canonical
 repository material for each planned chapter, its current readiness, and the
@@ -31,5 +32,6 @@ claims.
   teaching route that demonstrates the chapter contract.
 
 The map describes repository readiness only. It does not imply that a final
-publisher manuscript, external dataset, or engineering deployment is complete
-or validated.
+publisher manuscript, external dataset, agent integration, or engineering
+deployment is complete or validated. See the [engineering AI platform roadmap](../ENGINEERING_AI_PLATFORM_ROADMAP.md)
+for the governing development sequence.

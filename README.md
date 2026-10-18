@@ -94,6 +94,17 @@ engineering cases, and chapter-level reproducibility requirements. It keeps
 the semester course compact while providing a maintained path for deeper
 method, case-study, and AI-tool material.
 
+## Engineering AI platform development
+
+The repository is being expanded as an engineering-AI platform before it is
+treated as a book companion. The [platform roadmap](ENGINEERING_AI_PLATFORM_ROADMAP.md)
+connects a shared [engineering core](engineering_core/),
+[agentic engineering workflows](engineering_workflows/),
+[hardware and deployment pathways](hardware_and_deployment/),
+[application studios](case_studies/), and [capstone assessment](capstone_and_assessment/).
+Existing course modules remain the canonical learning route during this staged
+development.
+
 Do not upload student records, unpublished data, confidential sponsor data, restricted datasets, or material without redistribution permission.
 
 ### Repository maintenance check
