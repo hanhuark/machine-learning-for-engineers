@@ -9,7 +9,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from typing import Iterable
 
 
@@ -24,18 +24,27 @@ def subset_plan(
     revision: str, model_setup_path: str = DEFAULT_MODEL_SETUP_PATH
 ) -> dict[str, object]:
     """Return the deterministic teaching-replication subset without downloading."""
+    source_path = PurePosixPath(model_setup_path)
+    if (
+        not model_setup_path
+        or "\\" in model_setup_path
+        or source_path.is_absolute()
+        or ".." in source_path.parts
+        or str(source_path) in {".", ""}
+    ):
+        raise ValueError("model_setup_path must be a non-empty repository-relative source path")
     splits = {
         "train": list(DEFAULT_TRAIN_IDS),
         "validation": list(DEFAULT_VALIDATION_IDS),
         "test": list(DEFAULT_TEST_IDS),
     }
     simulation_ids = [identifier for split in splits.values() for identifier in split]
-    source_files = [model_setup_path] + [f"1_Dataset/sim_{identifier:04d}.npz" for identifier in simulation_ids]
+    source_files = [source_path.as_posix()] + [f"1_Dataset/sim_{identifier:04d}.npz" for identifier in simulation_ids]
     return {
         "source_repository": REPOSITORY_ID,
         "source_revision": revision,
         "evidence_class": "simulated CFD",
-        "model_setup_path": model_setup_path,
+        "model_setup_path": source_path.as_posix(),
         "splits": splits,
         "source_files": source_files,
         "warning": (

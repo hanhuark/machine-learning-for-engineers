@@ -35,6 +35,10 @@ class ColdPlateBaselineTests(unittest.TestCase):
         self.assertEqual(splits["validation"], list(DEFAULT_VALIDATION_IDS))
         self.assertEqual(splits["test"], list(DEFAULT_TEST_IDS))
 
+    def test_subset_plan_rejects_a_model_path_that_leaves_the_source_tree(self):
+        with self.assertRaises(ValueError):
+            subset_plan("0123456789abcdef", "../outside.json")
+
     def test_design_matrix_preserves_requested_simulation_order(self):
         setup = {
             "doe_configuration": {
