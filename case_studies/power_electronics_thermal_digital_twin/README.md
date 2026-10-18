@@ -39,7 +39,7 @@ Students must state the highest level supported by their evidence rather than se
 
 Use the [AI-resilient forecasting assignment](../../course_content/vii_time_series_forecasting/ASSIGNMENT_AI_RESILIENT.md), then reframe its simulated state as a converter thermal-management analogue. The required physical limits are: (i) with $P=0$ and $T>T_a$, the temperature must decay toward $T_a$; and (ii) at constant $P$, the ideal steady-state rise is $T-T_a=PR$.
 
-The [data card](data_card.md) gives the release boundary. The [literature map](LITERATURE_MAP.md) provides reading and the engineering logic behind the studio.
+The [data card](data_card.md) gives the release boundary. The [literature map](LITERATURE_MAP.md) provides reading and the engineering logic behind the studio. For a physics-based comparison, run the [lumped-thermal baseline](tutorials/) and complete the [studio extension](ASSIGNMENT_EXTENSION.md).
 
 ## What is required before a hardware/data release
 
